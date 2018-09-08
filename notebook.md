@@ -6,7 +6,9 @@
     * Will still have an AMD 8 processor - a little underspeed
 * Tried to install to use USB drive with work computer - didn't have admin rights to format USB to be a boot disk
 * Bought and installed Calibre on Kindle.  Could do it but couldn't connect to the epub document for class.
+  * Microsoft Edge gives me the error message, "We couldn't open the book."
   * At this point really frusterated with the ablity to read e-pub documents.  I'm just downloading it and conversting it to PDF periodically. 
+  
 
 # Week Fri 8/27/18 - 9/2/18
 
