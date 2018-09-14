@@ -1,3 +1,13 @@
+# Week Fri 9/10/18 - 09/16/18
+* Home computer upgraded! IT IS FAST!
+    * putting in 16gb ram
+    * 500gb SSD 6gb transfer rate
+    * Will still have an AMD 8 processor
+* Setup Virtualbox with Ubanto - works well
+    * Added bidirectional and copy and paste from external machines worked!
+    * Python was not installed on the image
+* Finally have Calibre working although I need to download the raw file each time there is a refresh.  Nontheless it is still more interactive than the PDFs I was using.
+
 # Week Fri 9/3/18 - 09/9/18
 * Worked on Upgrading home computer
   * Met with computer guy
