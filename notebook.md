@@ -6,7 +6,8 @@
 * Setup Virtualbox with Ubanto - works well
     * Added bidirectional and copy and paste from external machines worked!
     * Python was not installed on the image
-* Finally have Calibre working although I need to download the raw file each time there is a refresh.  Nontheless it is still more interactive than the PDFs I was using.
+* As discussed I've been going throught he Python section and spent time outside of this course learning more about classes
+* I finally have Calibre working although I need to download the raw file each time there is a refresh.  Nontheless it is still more interactive than the PDFs I was using.
 
 # Week Fri 9/3/18 - 09/9/18
 * Worked on Upgrading home computer
