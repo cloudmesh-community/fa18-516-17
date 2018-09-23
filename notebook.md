@@ -1,3 +1,8 @@
+
+# Week Fri 9/17/18 - 09/23/18
+* Went through the Python section and spent additional time learning  about classes
+* Reread through the epub book.  I try to follow the chapters as they come up and research acronyms when I don't understand the definition.
+
 # Week Fri 9/10/18 - 09/16/18
 * Home computer upgraded! IT IS FAST!
     * putting in 16gb ram
