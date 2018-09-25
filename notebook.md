@@ -1,6 +1,7 @@
 # Week Fri 9/24/18 - 09/30/18
 * Researched docopt in the epub but still confused what it does and how it is used.  https://radek.io/2015/01/19/docopt/ was helpful...  I'm still not exactly sure what it does!
 * Read about NIST Big Data Reference Architecture
+* Read the architecture section: https://github.com/cloudmesh-community/book/blob/master/chapters/arch.md
 
 # Week Fri 9/17/18 - 09/23/18
 * Went through the Python section and spent additional time learning  about classes
