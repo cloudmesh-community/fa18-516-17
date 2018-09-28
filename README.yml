@@ -4,3 +4,16 @@ owner:
   lastname: "Pope"
   hid: "fa18-516-17"
   community: "e516"
+
+section:
+    - title: title of the section
+         url: https://github.com/cloudmesh-community/book/chapters/...
+chapter:
+    - title: title of the chapter
+         url: https://github.com/cloudmesh-community/fa18-516-18/blob/master/chapter/whatever.md         
+project:
+    - title: title of the project
+         url: url in your hid space or that of your partner
+other:
+    - activity: spell checked md document
+         url: put url here
