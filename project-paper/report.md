@@ -10,7 +10,7 @@ Amazon Web Services (AWS) is a platform discouraged by Retailers and hence not u
 
 Potential steps:
 
-##Interact with Amazon Product Advertising API
+## Interact with Amazon Product Advertising API
 
 * Amazon has web service that millions of customers use every day
 * Build Product Advertising API applications that leverage this robust, scalable, and reliable technology. 
