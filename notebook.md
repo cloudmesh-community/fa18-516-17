@@ -1,3 +1,6 @@
+# Week Fri 10/1/18 - 10/7/18
+* Went through handbook content on REST, watched the REST video and other videos on REST APIs
+
 # Week Fri 9/24/18 - 09/30/18
 * Researched docopt in the epub but still confused what it does and how it is used.  https://radek.io/2015/01/19/docopt/ was helpful...  I'm still not exactly sure what it does!
 * Read about NIST Big Data Reference Architecture
