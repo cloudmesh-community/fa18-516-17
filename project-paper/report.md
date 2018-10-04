@@ -1,6 +1,7 @@
 # Title
-
-Brad Pope
+Amazon Review Opportunities
+Author: Brad Pope
+E-mail: Popebradleyt@gmail.com
 
 ## Abstarct
 
