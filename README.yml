@@ -7,13 +7,13 @@ owner:
 
 section:
     - title: title of the section
-         url: https://github.com/cloudmesh-community/book/chapters/...
+         url: https://github.com/cloudmesh-community/book/chapters/what is the "Section" for ?
 chapter:
-    - title: title of the chapter
-         url: https://github.com/cloudmesh-community/fa18-516-18/blob/master/chapter/whatever.md         
+    - title: Cloud Security Alliance (CSA)
+         url: https://github.com/cloudmesh-community/fa18-516-17/blob/master/chapter/CSA.md       
 project:
-    - title: title of the project
-         url: url in your hid space or that of your partner
+    - title: Amazon profile Review
+         url: https://github.com/cloudmesh-community/fa18-516-17/blob/master/project-paper/report.md
 other:
     - activity: spell checked md document
          url: put url here
