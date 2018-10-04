@@ -12,7 +12,7 @@ chapter:
     - title: Cloud Security Alliance (CSA)
          url: https://github.com/cloudmesh-community/fa18-516-17/blob/master/chapter/CSA.md       
 project:
-    - title: Amazon profile Review
+    - title: Amazon Review Opportunities
          url: https://github.com/cloudmesh-community/fa18-516-17/blob/master/project-paper/report.md
 other:
     - activity: spell checked md document
