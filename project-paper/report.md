@@ -1,12 +1,12 @@
-# title
+# Title
 
-Author
+Brad Pope
 
 ## Abstarct
 
-The project concept is to pull product, review and selling data off of Amazon Product Advertising and look for opportunities to sell more products.
-
 Amazon Web Services (AWS) is a platform discouraged by Retailers and hence not used by many Consumer Packaged Goods companies.  Project infrastructure revolves around using a non-AWS stack to pull Amazon items and reviews for analysis purposes.  It allows an individual to enter a set of product UPCs and understand where their opportunities are.
+
+In order to do this we need to pull product, review and selling data off of Amazon Product Advertising and look for opportunities to sell more products.
 
 Potential steps:
 
