@@ -3,6 +3,7 @@
 * Tried to through the steps to get the example instance of REST setup. Getting a permissions issue when installing the eve pip
 * Reseached Cloud Security Alliance and got it approved as a chapter.  Added it with a link to my readme.md file
 * Reviewed the SWAGGER content and Video. Still hard to conceptialize what this does.
+* Reviewed the content on VMs.
 
 # Week Fri 9/24/18 - 09/30/18
 * Researched docopt in the epub but still confused what it does and how it is used.  https://radek.io/2015/01/19/docopt/ was helpful...  I'm still not exactly sure what it does!
