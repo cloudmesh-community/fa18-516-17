@@ -1,5 +1,5 @@
-# git clone https://raw.githubusercontent.com/cloudmesh-community/fa18-516-17/master/project-code/README.md
-# bash README.md
+# git clone https://raw.githubusercontent.com/cloudmesh-community/fa18-516-17/master/project-code/README.sh
+# bash README.sh
 
 git clone https://raw.githubusercontent.com/cloudmesh-community/fa18-516-17/master/project-code/bashrc-add
 
