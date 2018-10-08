@@ -1,4 +1,7 @@
+# git clone https://raw.githubusercontent.com/cloudmesh-community/fa18-516-17/master/project-code/pyenv-setup.sh
+# bash python-setup.sh
 sudo apt-get update
+
 sudo apt-get install git python-pip make build-essential libssl-dev
 sudo apt-get install zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev
 sudo pip install virtualenvwrapper
