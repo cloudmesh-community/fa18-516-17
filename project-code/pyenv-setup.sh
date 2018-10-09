@@ -1,4 +1,4 @@
-# git clone https://raw.githubusercontent.com/cloudmesh-community/fa18-516-17/master/project-code/pyenv-setup.sh
+# wget https://raw.githubusercontent.com/cloudmesh-community/fa18-516-17/master/project-code/pyenv-setup.sh
 # bash python-setup.sh
 sudo apt-get update
 
