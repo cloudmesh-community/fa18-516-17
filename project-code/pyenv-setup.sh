@@ -2,8 +2,8 @@
 # bash python-setup.sh
 sudo apt-get update
 
-sudo apt-get install git python-pip make build-essential libssl-dev
-sudo apt-get install zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev
+sudo apt-get install -y git python-pip make build-essential libssl-dev
+sudo apt-get install -y zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev
 sudo pip install virtualenvwrapper
 
 git clone https://github.com/yyuu/pyenv.git ~/.pyenv
@@ -13,7 +13,7 @@ git clone https://github.com/yyuu/pyenv-virtualenvwrapper.git ~/.pyenv/plugins/p
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 
-sudo apt-get update && sudo apt-get upgrade
+sudo apt-get update -y && sudo apt-get upgrade -y
 sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev git
 
 which pyenv
