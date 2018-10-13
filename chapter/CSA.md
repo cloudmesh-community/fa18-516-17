@@ -10,7 +10,7 @@ The Cloud Security Alliance (CSA) is a nonprofit organization that provides a va
 ### Best ways to leverage CSA
 
 ## About the CSA
-The Cloud Security Alliance (CSA) is dedicated to defining and raising awareness of best practices to help ensure a secure cloud computing environment.  The CSA leverages the expertise of industry practitioners, associations and governments, corporations and individual members.  They offer research, education, certification, events, and products specific to cloud security that benefit the entire community.  They essentially provide a forum through which these different parties can work together to create and maintain these recommendations for a trusted cloud ecosystem. [@fa18-516-17-CSA-About](https://cloudsecurityalliance.org/about/, n.d.)
+The Cloud Security Alliance (CSA) is dedicated to defining and raising awareness of best practices to help ensure a secure cloud computing environment.  The CSA leverages the expertise of industry practitioners, associations and governments, corporations and individual members.  They offer research, education, certification, events, and products specific to cloud security that benefit the entire community.  They essentially provide a forum through which these different parties can work together to create and maintain these recommendations for a trusted cloud ecosystem. [@fa18-516-17-CSA-About]
 The industry group also provides security education and offers guidance to companies in different stages of cloud adoption.  They also offer certification programs for cloud security providers and manage a global consulting program that allows participants to work with a network of qualified cloud security professionals. [@fa18-516-17-CSA-About]
 
 ## Guiding Principles:
