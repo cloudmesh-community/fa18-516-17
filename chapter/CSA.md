@@ -1,6 +1,7 @@
 # Cloud Security Alliance (CSA)
 ## Introduction to CSA
 The Cloud Security Alliance (CSA) is a nonprofit organization that provides a variety of security resources to institutions including guidelines, education and best practices for adoption.  There are many different audiences and variety of cloud and compute configurations.  As this is the case, the CSA has a diverse membership, a variety of research areas and a breadth of recommendations and guidelines.  In this chapter CSA topics include:
+
 ### About the organization
 ### Objectives
 ### History
@@ -9,15 +10,16 @@ The Cloud Security Alliance (CSA) is a nonprofit organization that provides a va
 ### Best ways to leverage CSA
 
 ## About the CSA
-The Cloud Security Alliance (CSA) is dedicated to defining and raising awareness of best practices to help ensure a secure cloud computing environment.  The CSA leverages the expertise of industry practitioners, associations and governments, corporations and individual members.  They offer research, education, certification, events, and products specific to cloud security that benefit the entire community.  They essentially provide a forum through which these different parties can work together to create and maintain these recommendations for a trusted cloud ecosystem. (https://cloudsecurityalliance.org/about/, n.d.)
-The industry group also provides security education and offers guidance to companies in different stages of cloud adoption.  They also offer certification programs for cloud security providers and manage a global consulting program that allows participants to work with a network of qualified cloud security professionals. (https://cloudsecurityalliance.org/about/, n.d.)
+The Cloud Security Alliance (CSA) is dedicated to defining and raising awareness of best practices to help ensure a secure cloud computing environment.  The CSA leverages the expertise of industry practitioners, associations and governments, corporations and individual members.  They offer research, education, certification, events, and products specific to cloud security that benefit the entire community.  They essentially provide a forum through which these different parties can work together to create and maintain these recommendations for a trusted cloud ecosystem. [@fa18-516-17-CSA-About](https://cloudsecurityalliance.org/about/, n.d.)
+The industry group also provides security education and offers guidance to companies in different stages of cloud adoption.  They also offer certification programs for cloud security providers and manage a global consulting program that allows participants to work with a network of qualified cloud security professionals. [@fa18-516-17-CSA-About]
+
 ## Guiding Principles:
 The Cloud Security Alliance members are united by the following objectives: 
 * Promote a common level of understanding between the consumers and providers of cloud computing regarding the necessary security requirements and attestation of assurance. 
 * Promote independent research into best practices for cloud computing security. 
 * Launch awareness campaigns and educational programs on the appropriate uses of cloud computing and cloud security solutions. 
 * Create consensus lists of issues and guidance for cloud security assurance.
-Linked in https://www.linkedin.com/company/cloud-security-alliance/
+Linked in [@fa18-516-17-CSA-LinkedIn]
 
 ## History:
 The Cloud Security Alliance was forged due to the need to have to have security best practices in a cloud computing environment (Messmer, 2009) .  As the concept of cloud computing increased in popularity in 2008, so did the surrounding issues and opportunities.  The information security community took note and in November at an ISSA CISO Forum in Las Vegas the concept of the Cloud Security Alliance was born.  After acknowledging emerging trends, proactive participants outlined the initial mission and strategy of the CSA.   What followed was a series of meetings with industry leaders later that year which codified the foundation of CSA as we know it today. 
