@@ -1,13 +1,14 @@
 # Cloud Security Alliance (CSA)
-##Introduction to CSA
+## Introduction to CSA
 The Cloud Security Alliance (CSA) is a nonprofit organization that provides a variety of security resources to institutions including guidelines, education and best practices for adoption.  There are many different audiences and variety of cloud and compute configurations.  As this is the case, the CSA has a diverse membership, a variety of research areas and a breadth of recommendations and guidelines.  In this chapter CSA topics include:
 ### About the organization
 ### Objectives
 ### History
 ### Research areas
 ### Membership
-### How to best utilize the CSA
-##About the CSA
+### Best ways to leverage CSA
+
+## About the CSA
 The Cloud Security Alliance (CSA) is dedicated to defining and raising awareness of best practices to help ensure a secure cloud computing environment.  The CSA leverages the expertise of industry practitioners, associations and governments, corporations and individual members.  They offer research, education, certification, events, and products specific to cloud security that benefit the entire community.  They essentially provide a forum through which these different parties can work together to create and maintain these recommendations for a trusted cloud ecosystem. (https://cloudsecurityalliance.org/about/, n.d.)
 The industry group also provides security education and offers guidance to companies in different stages of cloud adoption.  They also offer certification programs for cloud security providers and manage a global consulting program that allows participants to work with a network of qualified cloud security professionals. (https://cloudsecurityalliance.org/about/, n.d.)
 ## Guiding Principles:
@@ -18,7 +19,7 @@ The Cloud Security Alliance members are united by the following objectives:
 * Create consensus lists of issues and guidance for cloud security assurance.
 Linked in https://www.linkedin.com/company/cloud-security-alliance/
 
-##History:
+## History:
 The Cloud Security Alliance was forged due to the need to have to have security best practices in a cloud computing environment (Messmer, 2009) .  As the concept of cloud computing increased in popularity in 2008, so did the surrounding issues and opportunities.  The information security community took note and in November at an ISSA CISO Forum in Las Vegas the concept of the Cloud Security Alliance was born.  After acknowledging emerging trends, proactive participants outlined the initial mission and strategy of the CSA.   What followed was a series of meetings with industry leaders later that year which codified the foundation of CSA as we know it today. 
 ## Research Areas
 The CSA currently has working groups that cover 38 domains of Cloud Security.  These working groups publish a variety of white papers, reports, tools, trainings, and services that benefit the cloud security community.
@@ -31,6 +32,7 @@ The CSA is a member-driven organization and individuals who are interested in cl
 
 The Cloud Security Alliance has a network of chapters worldwide. Chapters are separate legal entities from the Cloud Security Alliance, but operate within guidelines set down by the Cloud Security Alliance In the United States.
 Chapters are encouraged to hold local meetings and participate in areas of research. Chapter activities are coordinated by the Cloud Security Alliance worldwide. https://cloudsecurityalliance.org/chapters/
+
 ## Best ways to leverage CSA
 
 ### Security Guidance Publication
@@ -39,13 +41,14 @@ The Security Guidance for Critical Areas of Focus in Cloud Computing documentati
 These security guidelines use NIST industry standards and are easy to read with models and illustrations that make key concepts more digestible for most readers.  
 
 ### Training and Certifications
-####CSA STAR 
+#### CSA STAR 
 This is an industry-recognized security assurance in the cloud. STAR encompasses key principles of transparency, rigorous auditing, and harmonization of standards.
 STAR consists of three levels of assurance (Self Assessment, 3rd party certification and continuous auditing), based upon:
 •	The CSA Cloud Controls Matrix (CCM)
 •	The Consensus Assessments Initiative Questionnaire (CAIQ)
 •	The CSA Code of Conduct for GDPR Compliance
 https://cloudsecurityalliance.org/star/#_overview
+
 #### Certificate of Cloud Security Knowledge (CCSK) 
 Since Cloud Security Alliance first released the Certificate of Cloud Security Knowledge (CCSK) in 2010, thousands of IT and security professionals have used it to upgrade their skills. Certification Magazine listed CCSK at #1 on the Average Salary Survey 2016. https://cloudsecurityalliance.org/education/ccsk/#_overview
 
@@ -59,4 +62,4 @@ https://cloudsecurityalliance.org/global-consultancy/#_overview
 ### Working Groups
 As mentioned above working groups are a great way to learn and share with industry experts on topics you or your institution are focused on.  https://cloudsecurityalliance.org/research/#_groups
 
-A list of upcoming meetings is published on the CSA site and meetings are open to the public to join.
+A list of upcoming meetings is published on the CSA site and meetings are open to the public to join!
