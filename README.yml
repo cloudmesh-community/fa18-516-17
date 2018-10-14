@@ -4,11 +4,10 @@ owner:
   lastname: "Pope"
   hid: "fa18-516-17"
   community: "e516"
-
 section:
     - title: title of the section
-      url: https://github.com/cloudmesh-community/book/chapters/what is the "Section" for ?
-chapter:
+      url: TBD
+paper:
     - title: Cloud Security Alliance (CSA)
       url: https://github.com/cloudmesh-community/fa18-516-17/blob/master/chapter/CSA.md       
 project:
