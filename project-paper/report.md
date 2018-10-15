@@ -1,7 +1,27 @@
-# Title
-Amazon Review Opportunities
-Author: Brad Pope
-E-mail: Popebradleyt@gmail.com
+# Amazon Review Opportunities :hand: fa18-516-17
+
+| Brad Pope
+| popebradleyt@gmail.com
+| Indiana University
+| hid: fa18-516-17
+| github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-17/blob/master/project-report/report.md)
+| code: [:cloud:](https://github.com/cloudmesh-community/fa18-516-17/blob/master/project-code/code)
+
+**:mortar_board: Learning Objectives**
+
+* Understand how interact with Amazon Product information
+* Pull relevant products and look for review opportunities
+* Use Azure
+---
+
+Keywords: Amazon, Azure
+
+---
+
+*Chapter Structure*
+
+## Introduction
+
 
 ## Abstarct
 
