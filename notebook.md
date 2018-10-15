@@ -1,7 +1,5 @@
 # Week Fri 10/15/18 - 10/21/18
-* Spent most of the week on writing my Chapter on the CSA
-* Went to the BlockChain CSA working group session, researched the organization, wrote the paper and bibliography
-* Worked through the issues with creating my VMs on Monday.  I was copying and pasting the commands but I didn't know how to update the bios
+* 
 
 # Week Fri 10/8/18 - 10/14/18
 * Spent most of the week on writing my Chapter on the CSA
