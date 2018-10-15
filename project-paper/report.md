@@ -5,7 +5,7 @@
 | Indiana University
 | hid: fa18-516-17
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-17/blob/master/project-paper/report.md)
-| code: [:cloud:](https://github.com/cloudmesh-community/fa18-516-17/blob/master/project-code/code)
+| code: [:cloud:](https://github.com/cloudmesh-community/fa18-516-17/blob/master/project-code/README.sh)
 
 **:mortar_board: Learning Objectives**
 
