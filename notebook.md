@@ -1,5 +1,6 @@
 # Week Fri 10/15/18 - 10/21/18
-* 
+* Fixed my chapter bib file and validated that it passed!
+* Checked a couple times to see if the CSA chapter was included in the book
 
 # Week Fri 10/8/18 - 10/14/18
 * Spent most of the week on writing my Chapter on the CSA
