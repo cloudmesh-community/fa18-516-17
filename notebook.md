@@ -1,13 +1,20 @@
-# Week Fri 10/15/18 - 10/21/18
+# Week 10/22/18 - 10/28/18
+* Created a section on the CSA architecture.
+
+# Week 10/15/18 - 10/21/18
+* Installed Git locally and watched videos about it
+* Created an SSH key and put it into my Git account as well
+* Attempted to use Git command line to interact with my Git account - not working
+* Tried to run the scripts to setup a new virtual environment - it errored out.  I ran the command manually and still got some errors
 * Fixed my chapter bib file and validated that it passed!
 * Checked a couple times to see if the CSA chapter was included in the book
 
-# Week Fri 10/8/18 - 10/14/18
+# Week 10/8/18 - 10/14/18
 * Spent most of the week on writing my Chapter on the CSA
 * Went to the BlockChain CSA working group session, researched the organization, wrote the paper and bibliography
 * Worked through the issues with creating my VMs on Monday.  I was copying and pasting the commands but I didn't know how to update the bios
 
-# Week Fri 10/1/18 - 10/7/18
+# Week 10/1/18 - 10/7/18
 * Went through handbook content on REST, watched the REST video and other videos on REST APIs
 * Tried to through the steps to get the example instance of REST setup. Getting a permissions issue when installing the eve pip
 * Reseached Cloud Security Alliance and got it approved as a chapter.  Added it with a link to my readme.md file
@@ -15,16 +22,16 @@
 * Reviewed the content on VMs.
 * Set up a VM on Azure.
 
-# Week Fri 9/24/18 - 09/30/18
+# Week 9/24/18 - 09/30/18
 * Researched docopt in the epub but still confused what it does and how it is used.  https://radek.io/2015/01/19/docopt/ was helpful...  I'm still not exactly sure what it does!
 * Read about NIST Big Data Reference Architecture
 * Read the architecture section: https://github.com/cloudmesh-community/book/blob/master/chapters/arch.md
 
-# Week Fri 9/17/18 - 09/23/18
+# Week 9/17/18 - 09/23/18
 * Went through the Python section and spent additional time learning  about classes
 * Reread through the epub book.  I try to follow the chapters as they come up and research acronyms when I don't understand the definition.
 
-# Week Fri 9/10/18 - 09/16/18
+# Week 9/10/18 - 09/16/18
 * Home computer upgraded! IT IS FAST!
     * putting in 16gb ram
     * 500gb SSD 6gb transfer rate
@@ -35,7 +42,7 @@
 * As discussed I've been going throught he Python section and spent time outside of this course learning more about classes
 * I finally have Calibre working although I need to download the raw file each time there is a refresh.  Nontheless it is still more interactive than the PDFs I was using.
 
-# Week Fri 9/3/18 - 09/9/18
+# Week 9/3/18 - 09/9/18
 * Worked on Upgrading home computer
   * Met with computer guy
     * putting in 16gb ram
@@ -47,7 +54,7 @@
   * At this point really frusterated with the ablity to read e-pub documents.  I'm just downloading it and conversting it to PDF periodically. 
   
 
-# Week Fri 8/27/18 - 9/2/18
+# Week 8/27/18 - 9/2/18
 
 * Attended lecture
 * Watched the video introductions
