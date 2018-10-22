@@ -1,5 +1,5 @@
 # Week 10/22/18 - 10/28/18
-* Created a section on the CSA architecture.
+* Added CSA Architecture Reference Material #164
 
 # Week 10/15/18 - 10/21/18
 * Installed Git locally and watched videos about it
