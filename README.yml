@@ -5,8 +5,8 @@ owner:
   hid: "fa18-516-17"
   community: "e516"
 section:
-    - title: title of the section
-      url: TBD
+    - title: CSA Reference Architecture
+      url: https://github.com/cloudmesh-community/book/edit/master/chapters/arch.md
 paper:
     - title: Cloud Security Alliance (CSA)
       keyword: CSA
