@@ -4,6 +4,7 @@ owner:
   lastname: "Pope"
   hid: "fa18-516-17"
   community: "e516"
+  semester: fa18
 section:
   - title: CSA Reference Architecture
     url: https://github.com/cloudmesh-community/book/edit/master/chapters/arch.md
