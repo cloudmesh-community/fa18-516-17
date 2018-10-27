@@ -7,6 +7,8 @@ owner:
 section:
     - title: CSA Reference Architecture
       url: https://github.com/cloudmesh-community/book/edit/master/chapters/arch.md
+    - title: IBM Watson
+      https://github.com/cloudmesh-community/book/edit/master/chapters/iaas/watson/watson.md
 paper:
     - title: Cloud Security Alliance (CSA)
       keyword: CSA
