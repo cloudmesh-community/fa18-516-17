@@ -1,5 +1,9 @@
 # Week 10/22/18 - 10/28/18
 * Added CSA Architecture Reference Material #164
+* Added more material around CSA - trying to make it more applicable to students in this class
+* Added a section for IBM Watson.  I researched and created a login about why it was relevant.  Also experimented with thier administrative assistant
+* With the section post I couldn't get the images up again.  I'll come to office hours on Monday 
+* Created a new VM and put the new install.sh file there and executed it - it worked!
 
 # Week 10/15/18 - 10/21/18
 * Installed Git locally and watched videos about it
