@@ -5,18 +5,18 @@ owner:
   hid: "fa18-516-17"
   community: "e516"
 section:
-    - title: CSA Reference Architecture
-      url: https://github.com/cloudmesh-community/book/edit/master/chapters/arch.md
-    - title: IBM Watson
-      https://github.com/cloudmesh-community/book/edit/master/chapters/iaas/watson/watson.md
+  - title: CSA Reference Architecture
+    url: https://github.com/cloudmesh-community/book/edit/master/chapters/arch.md
+  - title: IBM Watson
+    url: https://github.com/cloudmesh-community/book/edit/master/chapters/iaas/watson/watson.md
 paper:
-    - title: Cloud Security Alliance (CSA)
-      keyword: CSA
-      url: https://github.com/cloudmesh-community/fa18-516-17/blob/master/chapter/CSA.md       
+  - title: "Cloud Security Alliance (CSA)"
+    keyword: CSA
+    url: https://github.com/cloudmesh-community/fa18-516-17/blob/master/chapter/CSA.md
 project:
-    - title: Amazon Review Opportunities
-      keyword: Amazon Reviews
-      url: https://github.com/cloudmesh-community/fa18-516-17/blob/master/project-paper/report.md
+  - title: Amazon Review Opportunities
+    keyword: Amazon Reviews
+    url: https://github.com/cloudmesh-community/fa18-516-17/blob/master/project-paper/report.md
 other:
-    - activity: spell checked md document
-      url: put url here
+  - activity: spell checked md document
+    url: put url here
