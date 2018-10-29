@@ -13,7 +13,7 @@ section:
 paper:
   - title: "Cloud Security Alliance (CSA)"
     keyword: CSA
-    url: https://github.com/cloudmesh-community/fa18-516-17/blob/master/chapter/CSA.md
+    url: https://github.com/cloudmesh-community/fa18-516-17/blob/master/paper/CSA.md
 project:
   - title: Amazon Review Opportunities
     keyword: Amazon Reviews
