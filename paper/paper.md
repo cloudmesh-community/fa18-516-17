@@ -1,5 +1,10 @@
 # Cloud Security Alliance (CSA)
 
+:o: format incorrect
+
+| github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-17/edit/master/paper/paper.md)
+
+
 ## Introduction to CSA
 
 The Cloud Security Alliance (CSA) is a nonprofit organization that provides a variety of security resources to institutions including guidelines, education and best practices for adoption.  There are many different audiences and variety of cloud and compute configurations.  As this is the case, the CSA has a diverse membership, a variety of research areas and a breadth of recommendations and guidelines.  In this chapter CSA topics include:
