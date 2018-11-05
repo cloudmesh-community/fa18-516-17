@@ -1,3 +1,12 @@
+# Week 10/5/18 - 11/11/18
+* Java and Hadoop were having issues during the install so I setup a new virtual machine
+
+# Week 10/29/18 - 11/4/18
+* Went through content on Containers
+* Attempted to install Hadoop and Java.  Ran into issues in the Handbook code since there were older versions of each each referenced that gave 404 errors.  Rewriting that section of the handbook
+* Got Git to work properly with the right keys
+* Sketched out a new project design since that was similar to the old one but did not require Amazon API access
+
 # Week 10/22/18 - 10/28/18
 * Added CSA Architecture Reference Material #164
 * Added more material around CSA - trying to make it more applicable to students in this class
