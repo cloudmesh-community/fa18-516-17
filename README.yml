@@ -10,6 +10,8 @@ section:
     url: https://github.com/cloudmesh-community/book/edit/master/chapters/arch.md
   - title: IBM Watson
     url: https://github.com/cloudmesh-community/book/edit/master/chapters/iaas/watson/watson.md
+  - title: Install Hadoop and Java
+    url: https://github.com/cloudmesh-community/book/edit/master/chapters/mapreduce/hadoop-installation.md
 paper:
   - title: "Cloud Security Alliance (CSA)"
     keyword: CSA
