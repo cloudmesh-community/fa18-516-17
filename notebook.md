@@ -1,5 +1,9 @@
 # Week 10/5/18 - 11/11/18
+* Fixed the handbook for Java and Hadoop - used the GitHub to load those changes
+* Loaded the IBM watson section and Images with GitHub
+Project work: 
 * Java and Hadoop were having issues during the install so I setup a new virtual machine
+* Successfully installed them.  Working on creating a HDFS database and setting up a REST with EVE
 
 # Week 10/29/18 - 11/4/18
 * Went through content on Containers
