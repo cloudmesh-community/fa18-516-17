@@ -1,4 +1,12 @@
-# Week 10/5/18 - 11/11/18
+# Week 11/12/18 - 11/18/18
+* Section for Java and Hadoop still open: https://github.com/cloudmesh-community/book/edit/master/chapters/mapreduce/hadoop-installation.md
+* Section IBM watson still open - images aren't showing on https://github.com/cloudmesh-community/book/edit/master/chapters/iaas/watson/watson.md
+* Changes to my CSA section in the arch.md file went through - DONE with this section
+Project work: 
+* Working on installing HIVE
+* REST API - read through easy Hadoop examples - still not sure how to actually install the files
+
+# Week 11/5/18 - 11/11/18
 * Fixed the handbook for Java and Hadoop - used the GitHub to load those changes
 * Loaded the IBM watson section and Images with GitHub
 Project work: 
