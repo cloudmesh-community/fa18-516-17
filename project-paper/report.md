@@ -12,18 +12,14 @@
 * Understand how interact with Amazon Product information
 * Pull relevant products and look for review opportunities
 * Use Azure
+
 ---
 
 Keywords: Amazon, Azure
 
 ---
 
-*Chapter Structure*
-
 ## Introduction
-
-
-## Abstarct
 
 Amazon Web Services (AWS) is a platform discouraged by Retailers and hence not used by many Consumer Packaged Goods companies.  Project infrastructure revolves around using a non-AWS stack to pull Amazon items and reviews for analysis purposes.  It allows an individual to enter a set of product UPCs and understand where their opportunities are.
 
