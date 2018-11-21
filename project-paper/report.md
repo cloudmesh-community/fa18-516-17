@@ -13,6 +13,8 @@
 * Pull relevant products and look for review opportunities
 * Use Azure
 
+:o: We do not understand the title
+
 ---
 
 Keywords: Amazon, Azure
