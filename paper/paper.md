@@ -1,6 +1,10 @@
-# Cloud Security Alliance (CSA) :hand: fa18-516-17
+# Cloud Security Alliance (CSA) :wave: :exclamation: fa18-516-17
 
 :o: format incorrect
+
+:o: bulleted list use phrase sush as according to []: .e.g. as you use bulleted lists the citation must be before, otherwist you need to replace bullets and replace with comma
+
+:o: this is incomplete as entire sections in the introductions are missing according to you, therfore this will not be further reviewed till not fixed
 
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-17/edit/master/paper/paper.md)
 
