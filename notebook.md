@@ -1,3 +1,6 @@
+# Week 11/19/18 - 11/25/18
+* Focused on the API webhcat to use with hdfs and hive
+
 # Week 11/12/18 - 11/18/18
 * Section for Java and Hadoop still open: https://github.com/cloudmesh-community/book/edit/master/chapters/mapreduce/hadoop-installation.md
 * Section IBM watson still open - images aren't showing on https://github.com/cloudmesh-community/book/edit/master/chapters/iaas/watson/watson.md
