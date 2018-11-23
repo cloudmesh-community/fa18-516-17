@@ -21,9 +21,12 @@ Keywords: Amazon, Azure
 
 ## Introduction
 
-Amazon Web Services (AWS) is a platform discouraged by Retailers and hence not used by many Consumer Packaged Goods companies.  Project infrastructure revolves around using a non-AWS stack to pull Amazon items and reviews for analysis purposes.  It allows an individual to enter a set of product UPCs and understand where their opportunities are.
 
-In order to do this we need to pull product, review and selling data off of Amazon Product Advertising and look for opportunities to sell more products.
+As with other industries, the retail industry today is undergoing a major shift.  Traditional brick and mortar stores used to relay on practiced merchandising techniques such as printed flyers, television advertising and low prices to drive traffic into stores.  Today, shoppers are electing for convenience more than ever before.  This is driving growth in a variety of time-saving Omni channel purchasing behaviors.  Shoppers are voting with their wallets for more product being shipped to their door or to their cars with grocery pick-up.
+In tandem with a more demanding shopper there is also a fundamental shift in the sheer amount of data collected on the path taken to purchase products.  From the interaction to advertising campaigns, social media impact through research done online vs in-store, there is more data than ever available for retailers to leverage.
+
+To survive, Retailers need to be open to change and use every advantage they have.  A fundamental element of developing their strategy is having a saleable cloud architecture to leverage the masses of data that they should be collecting about their shoppers.  The challenge is that as technology has evolved each retailer responded differently and implemented a piecemeal data strategy to accommodate data as it becomes available.  The challenge is to offer a cloud based highly scalable distributed architecture that will allow retailers to process the data a variety and integrate new data sets as they become available.
+
 
 ## Dataset
 
