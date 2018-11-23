@@ -1,13 +1,14 @@
 # Cloud Security Alliance (CSA) :wave: :exclamation: fa18-516-17
 
-:o: format incorrect - I believe I fixed this!
+:o: format incorrect - BP - Fixed below!
 
-:o: bulleted list use phrase sush as according to - I Fixed this!
+:o: bulleted list use phrase sush as according to - Fixed below!
 
-:o: this is incomplete as entire sections in the introductions are missing according to you, therfore this will not be further reviewed till not fixed - 
+:o: this is incomplete as entire sections in the introductions are missing according to you, therfore this will not be further reviewed till not fixed - BP - Fixed below! 
+
+:o: no superscript as char use markdown for that - BP - took out the incorrect superscript character
 
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-17/edit/master/paper/paper.md)
-
 
 ## Introduction to CSA
 
@@ -64,24 +65,21 @@ These security guidelines use NIST industry standards and are easy to read with 
 #### CSA STAR 
 
 This is an industry-recognized security assurance in the cloud. STAR encompasses key principles of transparency, rigorous auditing, and harmonization of standards.
-STAR consists of three levels of assurance (Self Assessment, 3rd party certification and continuous auditing), based upon:
+According to the CSA website, "STAR consists of three levels of assurance (Self Assessment, 3rd party certification and continuous auditing), based upon:
 
 *	The CSA Cloud Controls Matrix (CCM)
 *	The Consensus Assessments Initiative Questionnaire (CAIQ)
-*	The CSA Code of Conduct for GDPR Compliance
+*	The CSA Code of Conduct for GDPR Compliance"
 [@fa18-516-17-STAR]
-
-:o: unclear if quoted
 
 #### Certificate of Cloud Security Knowledge (CCSK) 
 
 Since Cloud Security Alliance first released the Certificate of Cloud Security Knowledge (CCSK) in 2010, thousands of IT and security professionals have used it to upgrade their skills. Certification Magazine listed CCSK at #1 on the Average Salary Survey 2016. [@fa18-516-17-CCSK]
 
 
-> "Certified Cloud Security Professional (CCSP) The CCSP is a global credential that represents the highest standard for cloud security expertise. It was co-created by Cloud Security Alliance and (ISC)² — leading stewards for information security and cloud computing security.”
+Accoring to thier CCSP page, "Certified Cloud Security Professional (CCSP) The CCSP is a global credential that represents the highest standard for cloud security expertise. It was co-created by Cloud Security Alliance and (ISC)² — leading stewards for information security and cloud computing security.”
 [@fa18-516-17-CCSP]
 
-:o: no superscript as char use markdown for that
 
 #### CSA Global Consulting Program
 
