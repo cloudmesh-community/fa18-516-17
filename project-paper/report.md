@@ -1,4 +1,4 @@
-# Retail Data Processing Example :hand: fa18-516-17
+# Scalable Data Processing for Retail :hand: fa18-516-17
 
 | Brad Pope
 | popebradleyt@gmail.com
