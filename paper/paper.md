@@ -1,10 +1,10 @@
 # Cloud Security Alliance (CSA) :wave: :exclamation: fa18-516-17
 
-:o: format incorrect
+:o: format incorrect - I believe I fixed this!
 
-:o: bulleted list use phrase sush as according to []: .e.g. as you use bulleted lists the citation must be before, otherwist you need to replace bullets and replace with comma
+:o: bulleted list use phrase sush as according to - I Fixed this!
 
-:o: this is incomplete as entire sections in the introductions are missing according to you, therfore this will not be further reviewed till not fixed
+:o: this is incomplete as entire sections in the introductions are missing according to you, therfore this will not be further reviewed till not fixed - 
 
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-17/edit/master/paper/paper.md)
 
@@ -13,12 +13,12 @@
 
 The Cloud Security Alliance (CSA) is a nonprofit organization that provides a variety of security resources to institutions including guidelines, education and best practices for adoption.  There are many different audiences and variety of cloud and compute configurations.  As this is the case, the CSA has a diverse membership, a variety of research areas and a breadth of recommendations and guidelines.  In this chapter CSA topics include:
 
-### About the organization
-### Objectives
-### History
-### Research areas
-### Membership
-### Best ways to leverage CSA
+* About the CSA
+* Guiding Principles
+* History
+* Research areas
+* Membership
+* Best ways to leverage CSA
 
 ## About the CSA
 
@@ -27,12 +27,11 @@ The industry group also provides security education and offers guidance to compa
 
 ## Guiding Principles
 
-The Cloud Security Alliance members are united by the following objectives: 
-* Promote a common level of understanding between the consumers and providers of cloud computing regarding the necessary security requirements and attestation of assurance. 
+The Cloud Security Alliance members are united by the following objectives according to thier LinkedIn page: 
+* "Promote a common level of understanding between the consumers and providers of cloud computing regarding the necessary security requirements and attestation of assurance. 
 * Promote independent research into best practices for cloud computing security. 
 * Launch awareness campaigns and educational programs on the appropriate uses of cloud computing and cloud security solutions. 
-* Create consensus lists of issues and guidance for cloud security assurance.
-Linked in [@fa18-516-17-CSA-LinkedIn]
+* Create consensus lists of issues and guidance for cloud security assurance." [@fa18-516-17-CSA-LinkedIn]
 
 ## History
 
