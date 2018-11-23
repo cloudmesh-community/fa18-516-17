@@ -1,4 +1,4 @@
-# Amazon Review Opportunities :hand: fa18-516-17
+# Retail Data Processing Example :hand: fa18-516-17
 
 | Brad Pope
 | popebradleyt@gmail.com
@@ -13,8 +13,6 @@
 * Pull relevant products and look for review opportunities
 * Use Azure
 
-:o: We do not understand the title
-
 ---
 
 Keywords: Amazon, Azure
@@ -27,28 +25,78 @@ Amazon Web Services (AWS) is a platform discouraged by Retailers and hence not u
 
 In order to do this we need to pull product, review and selling data off of Amazon Product Advertising and look for opportunities to sell more products.
 
-Potential steps:
+## Dataset
 
-## Interact with Amazon Product Advertising API
+## Implementation
 
-* Amazon has web service that millions of customers use every day
-* Build Product Advertising API applications that leverage this robust, scalable, and reliable technology. 
-* Fields to retrieve:
-			i. items for sale
-			ii. customer reviews
-			iii. seller reviews
-			iv. customer reviews
-			v. product promotions
-## Setup and Azure environment
+## Benchmark
 
-* UI that allows users to enter in their product code / UPCs
-* Database to store items from Amazon (maybe Apache Hive but I'm open to others)
-* Calls to get the data from Amazon's API
+## Conclusion
 
-## Identify products that have opportunities.  
+## Acknowledgement
 
-* Poor descriptions or poor reviews
-* Simple comparison if time is scarce
-* If time allows and the data is robust I'd like to try using ML with spark
-* - Training: Compare seller and customer reviews to actual sales if it exists
-* - Testing: Take the model that performs the best in test and apply it to data available from Amazon Product Advertising API
+---
+
+
+## Introduction
+
+One possible way of structuring the document.
+We may have to tweak this example as we progress.
+
+Make sure paragraphs are 80 chars wide 
+
+Place images in an images directory
+
+Use empty lines before and after headings
+
+In [@vonLaszwski-fa18-sample-report] we can find a sample report.
+
+Naturally the headings are just suggestions and you may change them as
+appropriate for your project.
+
+## Requirements
+
+All images must be referred to in the text. The words bellow and above
+must not be used in your paper for images, tables, and code.
+
++@fig:fromonetotheorther shows a nice figure exported from Powerpoint
+to png. If you like you can use this as a basis for your drawings.
+
+![A simple flow chart](images/from-one-to-the-other.png){#fig:fromonetotheorther}
+
+Figures must not be cited with an explicit number, but automated
+numbering must be used. Here is how we did it for this paper:
+
+```
++@fig:fromonetotheorther shows a nice
+figure exported from Powerpoint to png.
+If you like you can use this as a basis
+for your drawings.
+
+![A simple flow chart](images/from-one-to-the-other.png){#fig:fromonetotheorther}
+```
+
+If the paper is copied form another source you MUST use a citation in the caption. 
+
+![A simple flow chart [@vonLaszwski-fa18-sample-report]](images/from-one-to-the-other.png){#fig:fromonetotheorther}
+
+This is done as follows
+
+```
+![A simple flow chart [@vonLaszwski-fa18-sample-report]](images/from-one-to-the-other.png){#fig:fromonetotheorther}
+```
+
+## Design 
+
+## Architecture
+
+## Dataset
+
+## Implementation
+
+## Benchmark
+
+## Conclusion
+
+## Acknowledgement
+
