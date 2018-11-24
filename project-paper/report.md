@@ -53,7 +53,6 @@ The complexity with this data is that it can be hard to combine and mine with a 
 ## Implementation
 For this project I chose to implement a Hadoop based solution shown in the diagram below.  
 While a learning exercise there were reasons behind the selection of the components:
-
 ### Hadoop 
 I chose to use Apache Hadoop for retailers for several reasons.  First, the benefits Hadoop is capable of are well aligned with the needs of retailers.  According to the home page of the Hadoop project at Apache Software Foundation, "Apache Hadoop offers highly reliable, scalable, distributed processing of large data sets using simple programming models. With the ability to be built on clusters of commodity computers, Hadoop provides a cost-effective solution for storing and processing structured, semi- and unstructured data with no format requirements." [@Misc{fa18-516-17-Hadoop].  
 
