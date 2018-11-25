@@ -32,7 +32,7 @@ To survive, Retailers need to be open to change and use every advantage they hav
 ## Dataset
 In order to appreciate the storage and computational requirements it is important to understand the idiosyncrasies of a retail data set.  I’ll describe the basics here before I describe the subset I chose for this project. 
 
-![Retail Project Diagram](images/ retailprojectdiagram.PNG){#fig:Retail Project Diagram}
+![Retail Project Diagram](images/retailprojectdiagram.PNG){#fig:Retail Project Diagram}
 
 Data available to retailers is heavily nuanced as each retailer collects and houses data in a different way.  There are a host of internal metrics required in the ordinary course of business.  In addition, there are a mounting number of external datasets now required to effectively compete.  All of this makes for a challenge when it comes to acquiring, blending and putting the data to use.  
 Retailer generated data (Internal data): This is data that the retailer creates during the normal course of business.  This includes transactional data such as what product was sold in each store at any given time including what other products it sold with in a specific transaction.   At an operational level it includes the purchase orders they uses to get more product to sell from suppliers, inventory levels in warehouses and stores.  Operational data is also future looking with anticipated through merchandise forecasts.  There are other data sets that track what products should be on shelves, how much product should be there and where the product should go.  In short, there is complexity for Retailers on their internal data sets range greatly in terms their uses and the metrics gathered.  
