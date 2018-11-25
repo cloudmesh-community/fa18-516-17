@@ -9,13 +9,16 @@
 
 **:mortar_board: Learning Objectives**
 
-* Understand how interact with Amazon Product information
-* Pull relevant products and look for review opportunities
-* Use Azure
+
+* Describe the unique data storage and compute needs of the Retail Industry
+* Implement portions of a cloud computing environment that would meet those needs
+* Describe the performance of the prescribed cloud computing environment on a sample retail dataset
+* Highlight some additional architecture opportunities outside the scope of this project that would further help the Retail sector
+
 
 ---
 
-Keywords: Amazon, Azure
+Keywords: Hadoop, Hive, WebHCat, Java, Retail
 
 ---
 
