@@ -1,5 +1,12 @@
+# Week 11/26/18 - 12/2/18
+* Continued writing the Project paper
+* Cleanup on previous chapter and sections
+
 # Week 11/19/18 - 11/25/18
-* Focused on the API webhcat to use with hdfs and hive
+* Focused on the API webhcat to use with hdfs and hive - spent several hours with this and I'm still having a hard time
+* Went back and cleaned up all the coding steps.  Created another Ubunto environment and installed everything again to make sure it worked
+* Wrote my first draft of the paper.  Given my technology choices it is only ~2,500 words long and for an individual it should be 6-8 pages of single spaced work with ~1k to ~1.2k words for page (minimum of 6k words).
+* Cleaned up my chapter on CSA based on instructors comments
 
 # Week 11/12/18 - 11/18/18
 * Section for Java and Hadoop still open: https://github.com/cloudmesh-community/book/edit/master/chapters/mapreduce/hadoop-installation.md
