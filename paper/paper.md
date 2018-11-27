@@ -1,4 +1,4 @@
-# Cloud Security Alliance (CSA) :smiley: :exclamation: fa18-516-17
+# Cloud Security Alliance (CSA) :smiley: :wave: fa18-516-17
 
 :o:  lots of wrong punctuations
 
