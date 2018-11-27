@@ -29,10 +29,11 @@ The industry group also provides security education and offers guidance to compa
 ## Guiding Principles
 
 The Cloud Security Alliance members are united by the following objectives according to thier LinkedIn page: 
-* "Promote a common level of understanding between the consumers and providers of cloud computing regarding the necessary security requirements and attestation of assurance. 
-* Promote independent research into best practices for cloud computing security. 
-* Launch awareness campaigns and educational programs on the appropriate uses of cloud computing and cloud security solutions. 
-* Create consensus lists of issues and guidance for cloud security assurance." [@fa18-516-17-CSA-LinkedIn]
+
+> * "Promote a common level of understanding between the consumers and providers of cloud computing regarding the necessary security requirements and attestation of assurance. 
+  * Promote independent research into best practices for cloud computing security. 
+  * Launch awareness campaigns and educational programs on the appropriate uses of cloud computing and cloud security solutions. 
+  * Create consensus lists of issues and guidance for cloud security assurance." [@fa18-516-17-CSA-LinkedIn]
 
 ## History
 
@@ -65,26 +66,31 @@ These security guidelines use NIST industry standards and are easy to read with 
 #### CSA STAR 
 
 This is an industry-recognized security assurance in the cloud. STAR encompasses key principles of transparency, rigorous auditing, and harmonization of standards.
-According to the CSA website, "STAR consists of three levels of assurance (Self Assessment, 3rd party certification and continuous auditing), based upon:
+According to the CSA website, 
 
-*	The CSA Cloud Controls Matrix (CCM)
-*	The Consensus Assessments Initiative Questionnaire (CAIQ)
-*	The CSA Code of Conduct for GDPR Compliance"
-[@fa18-516-17-STAR]
+> "STAR consists of three levels of assurance (Self Assessment, 3rd party certification and continuous auditing), based upon:
+
+> *	The CSA Cloud Controls Matrix (CCM)
+> *	The Consensus Assessments Initiative Questionnaire (CAIQ)
+> *	The CSA Code of Conduct for GDPR Compliance"
+> [@fa18-516-17-STAR]
 
 #### Certificate of Cloud Security Knowledge (CCSK) 
 
-Since Cloud Security Alliance first released the Certificate of Cloud Security Knowledge (CCSK) in 2010, thousands of IT and security professionals have used it to upgrade their skills. Certification Magazine listed CCSK at #1 on the Average Salary Survey 2016. [@fa18-516-17-CCSK]
+Since Cloud Security Alliance first released the Certificate of Cloud Security Knowledge (CCSK) in 2010, thousands of IT and security professionals have used it to upgrade their skills. Certification Magazine listed CCSK at number one  on the Average Salary Survey 2016. [@fa18-516-17-CCSK]
 
 
-Accoring to thier CCSP page, "Certified Cloud Security Professional (CCSP) The CCSP is a global credential that represents the highest standard for cloud security expertise. It was co-created by Cloud Security Alliance and (ISC)² — leading stewards for information security and cloud computing security.”
-[@fa18-516-17-CCSP]
+Accoring to thier CCSP page, 
 
+> "Certified Cloud Security Professional (CCSP) The CCSP is a global credential that represents the highest standard for cloud security expertise. It was co-created by Cloud Security Alliance and (ISC)² — leading stewards for information security and cloud computing security.” [@fa18-516-17-CCSP]
+
+:o: wrong punctuation
 
 #### CSA Global Consulting Program
 
-"The Cloud Security Alliance Global Consulting Program (CSA GCP) allows cloud users to work with a network of trusted security professionals and organizations that offer qualified professional services based on CSA best practices. These providers bring with them a broad understanding of the challenges organizations face when moving to the cloud.”
-[@fa18-516-17-global-consultancy]
+> "The Cloud Security Alliance Global Consulting Program (CSA GCP) allows cloud users to work with a network of trusted security professionals and organizations that offer qualified professional services based on CSA best practices. These providers bring with them a broad understanding of the challenges organizations face when moving to the cloud.” [@fa18-516-17-global-consultancy]
+
+:o: wrong punctuation
 
 ### Working Groups
 
