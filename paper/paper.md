@@ -30,10 +30,11 @@ The industry group also provides security education and offers guidance to compa
 
 The Cloud Security Alliance members are united by the following objectives according to thier LinkedIn page: 
 
-> * "Promote a common level of understanding between the consumers and providers of cloud computing regarding the necessary security requirements and attestation of assurance. 
-  * Promote independent research into best practices for cloud computing security. 
-  * Launch awareness campaigns and educational programs on the appropriate uses of cloud computing and cloud security solutions. 
-  * Create consensus lists of issues and guidance for cloud security assurance." [@fa18-516-17-CSA-LinkedIn]
+> * "Promote a common level of understanding between the consumers and providers of 
+>   cloud computing regarding the necessary security requirements and attestation of assurance. 
+> * Promote independent research into best practices for cloud computing security. 
+> * Launch awareness campaigns and educational programs on the appropriate uses of cloud computing and cloud security solutions. 
+> * Create consensus lists of issues and guidance for cloud security assurance." [@fa18-516-17-CSA-LinkedIn]
 
 ## History
 
@@ -69,7 +70,7 @@ This is an industry-recognized security assurance in the cloud. STAR encompasses
 According to the CSA website, 
 
 > "STAR consists of three levels of assurance (Self Assessment, 3rd party certification and continuous auditing), based upon:
-
+>
 > *	The CSA Cloud Controls Matrix (CCM)
 > *	The Consensus Assessments Initiative Questionnaire (CAIQ)
 > *	The CSA Code of Conduct for GDPR Compliance"
