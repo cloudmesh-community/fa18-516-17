@@ -1,8 +1,8 @@
 # Cloud Security Alliance (CSA) :smiley: :exclamation: fa18-516-17
 
-:o: format incorrect - BP - Fixed below!
+:o:  lots of wrong punctuations
 
-:o: bulleted list use phrase sush as according to - Fixed below!
+:o: bulleted list use phrase sush as according to - Fixed below! it was not fixed, sio i fixed it
 
 :o: this is incomplete as entire sections in the introductions are missing according to you, therfore this will not be further reviewed till not fixed - BP - Fixed below! 
 
