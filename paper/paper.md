@@ -1,6 +1,6 @@
 # Cloud Security Alliance (CSA) :smiley: :wave: fa18-516-17
 
-:o:  lots of wrong punctuations
+:o:  lots of wrong punctuations YOU CAN NOT HAVE THE CITATION AFTER THE DOT AS IT OTHERWISE APPLIES TO THE NEXT SENTENCE
 
 :o: bulleted list use phrase sush as according to - Fixed below! it was not fixed, sio i fixed it
 
