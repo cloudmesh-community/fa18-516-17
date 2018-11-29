@@ -26,7 +26,7 @@ Then do
 ```bash
 
 Then do:
-Step: restart the virtualbox
+RESTART THE VIRTUALBOX
 # Hadoop  Installation - User and User Group Creation
 $ sudo adduser --ingroup hadoop_group hduser
 use the password "projectpass"
