@@ -40,3 +40,5 @@ pyenv virtualenv 2.7.15 ENV2
 pyenv virtualenv 3.7.1 ENV3
 
 echo "ENV3" >> ~/.bashrc
+
+sudo addgroup hadoop_group
