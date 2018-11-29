@@ -1,5 +1,3 @@
-sudo sh /home/student/project/fa18-516-17/project-code/setup-2.sh
-
 #Install Java
 # Create directory and navigate to it
 
