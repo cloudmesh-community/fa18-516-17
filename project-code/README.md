@@ -24,21 +24,21 @@ $ sudo sh setup-1.sh
 Then do 
 
 ```bash
+
 Then do:
 Step: restart the virtualbox
 # Hadoop  Installation - User and User Group Creation
-$ sudo addgroup hadoop_group
 $ sudo adduser --ingroup hadoop_group hduser
 use the password "projectpass"
-"Enter" for default
+"Enter" for default; then Y
+#HERE ON AUTOMATIC
 $ sudo adduser hduser sudo
 # Configuring SSH
-$ sudo su - hduser
 $ ssh-keygen -t rsa
 # Enter file in which to save the key "hadkey"
-# Enter to create password. IN general this is not a good idea, but for this case we make an exception.
-#setup-2 start
+# Enter 2x to create password. IN general this is not a good idea, but for this case we make an exception.
 sudo sh /home/student/project/fa18-516-17/project-code/setup-2.sh
+
 ```
 
 ## Configuration
