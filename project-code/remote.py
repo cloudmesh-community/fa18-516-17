@@ -3,7 +3,7 @@ from pyhive import hive
 host_name = "10.0.2.15"
 port = 10000
 user = "hduser"
-password = "trainingbrad@99"
+password = "projectpass"
 database="default"
 
 def hiveconnection(host_name, port, user,password, database):
