@@ -3,10 +3,10 @@
 ## Setup
 
 Setup a VirtualBox with Ubuntu per class instruction video:
-	Linux 64-bit system
-	8mb of RAM
-	20 GB hardrive space
-	Ubuntu-18.04.1-desktop-amd64.iso(1.82GB)
+* Linux 64-bit system
+* 8mb of RAM
+* 20 GB hardrive space
+* Ubuntu-18.04.1-desktop-amd64.iso(1.82GB)
 Computername:516
 Username:student
 
