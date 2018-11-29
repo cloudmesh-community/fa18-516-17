@@ -1,40 +1,3 @@
-#Install Java
-
-# Create directory and navigate to it
-mkdir -p ~/cloudmesh/bin
-cd ~/cloudmesh/bin
-
-# Get file and sign user agreement
-wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e4a523244c269598db4e85c51e0c/jdk-8u191-linux-x64.tar.gz"
-
-# Run Java Tarball
-tar -xzvf jdk-8u191-linux-x64.tar.gz
-
-# Install hadoop
-
-cd ~/cloudmesh/bin/
-
-wget http://mirrors.sonic.net/apache/hadoop/common/hadoop-3.1.1/hadoop-3.1.1.tar.gz
-
-# Run hadoop tarball
-tar -xzvf hadoop-3.1.1.tar.gz
-
-#Update export paths for current and future installs
-
-gedit ~/.bashrc
-
-#at the bottom of the .bashrc file make the following exports then save the file
-export JAVA_HOME=~/cloudmesh/bin/jdk1.8.0_191
-export HADOOP_HOME=~/cloudmesh/bin/hadoop-3.1.1
-export YARN_HOME=$HADOOP_HOME
-export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
-export PATH=$HADOOP_HOME/bin:$JAVA_HOME/bin:$PATH
-export HIVE_HOME=/home/hduser/cloudmesh/apache-hive-3.1.1-bin
-export TEMPLETON_HOME=~/cloudmesh/apache-hive-3.1.1-bin/hcatalog
-export HCATALOG_HOME=~/cloudmesh/apache-hive-3.1.1-bin/hcatalog
-export PATH=$PATH:$HIVE_HOME/bin:$TEMPLETON_HOME/bin
-
-
 source ~/.bashrc
 java -version
 
@@ -87,15 +50,8 @@ tar -xvzf apache-hive-3.1.1-bin.tar.gz
 #double check if Hive home is there
 echo $HIVE_HOME 
 
-cd ~/cloudmesh/apache-hive-3.1.1-bin/conf
-sudo gedit hive-env.sh.template
-
-#Edit the file to the following 
-# Set HADOOP_HOME to point to a specific hadoop install directory
-HADOOP_HOME=/home/hduser/cloudmesh/bin/hadoop-3.1.1
-
-# Hive Configuration Directory can be controlled by:
-export HIVE_CONF_DIR=/home/hduser/cloudmesh/apache-hive-3.1.1-bin
+# I cut out many sections here!
+sudo cp /home/student/project/fa18-516-17/project-code/hive-env.sh /home/hduser/cloudmesh/bin/hadoop-3.1.1
 
 cd ~/cloudmesh
 
@@ -104,7 +60,25 @@ hdfs dfs -mkdir tmp
 
 hdfs dfs -chmod g+w retailhdfs
 hdfs dfs -chmod g+w tmp
-
+"""
 
 #Check hive version
 hive --version
+
+# setup-2 end
+
+#Step 8: Create hive-site.xml not sure how to edit this… many references to the DB
+
+# I made several changes here - more code in original
+cp /home/student/project/fa18-516-17/project-code/hive-site.xml ~/cloudmesh/apache-hive-3.1.1-bin/conf
+
+#save the hive-site.xml
+
+# Derby is built into HIVE - works the purposes of this project on a local machine
+
+~/cloudmesh/apache-hive-3.1.1-bin/bin/schematool -initSchema -dbType derby
+
+
+#from here ~/cloudmesh
+cd ~/cloudmesh
+hive
