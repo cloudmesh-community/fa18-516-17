@@ -13,12 +13,23 @@ Setup a VirtualBox with Ubuntu per class instruction video:
 Execute
 
 ```bash
+sudo apt-get install git
+mkdir project
+cd project
+git clone https://github.com/cloudmesh-community/fa18-516-17.git
+cd ~/project/fa18-516-17/project-code
 $ setup-1.sh
 ```
 
 Then do 
 
 ```bash
+Restart the virtualbox
+# Hadoop  Installation 
+$ sudo addgroup hadoop_group
+$ sudo adduser --ingroup hadoop_group hduser
+$ sudo adduser hduser sudo
+
 $ setup-2.sh
 ```
 
