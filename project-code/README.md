@@ -13,36 +13,48 @@ Setup a VirtualBox with Ubuntu per class instruction video:
 Execute
 
 ```bash
-sudo apt-get install git
-mkdir project
-cd project
-git clone https://github.com/cloudmesh-community/fa18-516-17.git
-cd ~/project/fa18-516-17/project-code
-$ setup-1.sh
+$ sudo apt-get install git
+$ mkdir project
+$ cd project
+$ git clone https://github.com/cloudmesh-community/fa18-516-17.git
+$ cd ~/project/fa18-516-17/project-code
+$ sudo sh setup-1.sh
 ```
 
 Then do 
 
 ```bash
-Restart the virtualbox
-# Hadoop  Installation 
+Then do:
+Step: restart the virtualbox
+# Hadoop  Installation - User and User Group Creation
 $ sudo addgroup hadoop_group
 $ sudo adduser --ingroup hadoop_group hduser
+use the password "projectpass"
+"Enter" for default
 $ sudo adduser hduser sudo
-
-$ setup-2.sh
+# Configuring SSH
+$ sudo su - hduser
+$ ssh-keygen -t rsa
+# Enter file in which to save the key "hadkey"
+# Enter to create password. IN general this is not a good idea, but for this case we make an exception.
+#setup-2 start
+sudo sh /home/student/project/fa18-516-17/project-code/setup-2.sh
 ```
-
-
 
 ## Configuration
 
-Do something
+# From the hive> prompt create the table by copying in the following:
+CREATE EXTERNAL TABLE IF NOT EXISTS retaildata(Period_Key INT, Item_Key INT, Store_Key INT, POSQty INT, POSSales DOUBLE, Demand_Dollars DOUBLE) ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' STORED AS TEXTFILE LOCATION '/home/hduser/cloudmesh/retailhdfs/hivedbtable.txt' TBLPROPERTIES("skip.header.line.count"="1");
+#setup-3 start
+$ sudo sh /home/student/project/fa18-516-17/project-code/setup-3.sh
+
 
 ## Test
 
 Execute
+$python remote.py
 
+#This should kick off a query tht runs on HIVE to calculate the average price by item
 ```bash
 $ test.sh
 ```
