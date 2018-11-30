@@ -32,7 +32,7 @@ export TEMPLETON_HOME=~/cloudmesh/apache-hive-3.1.1-bin/hcatalog
 export HCATALOG_HOME=~/cloudmesh/apache-hive-3.1.1-bin/hcatalog
 export PATH=$PATH:$HIVE_HOME/bin:$TEMPLETON_HOME/bin
 export PYENV_ROOT=$HOME/.pyenv
-export PATH=$PYENV_ROOT/bin:$PATH
+export PATH=$PYENV_ROOT/bin:$PYENV_ROOT/plugins/pyenv-virtualenv/shims:$PYENV_ROOT/shims:$PATH
 
 java -version
 
