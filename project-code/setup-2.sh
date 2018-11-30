@@ -8,14 +8,14 @@ cd ~/cloudmesh/bin
 wget -c --header "Cookie: oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e4a523244c269598db4e85c51e0c/jdk-8u191-linux-x64.tar.gz"
 
 # Run Java Tarball
-tar -xzvf jdk-8u191-linux-x64.tar.gz
+tar -xzf jdk-8u191-linux-x64.tar.gz
 
 # Install hadoop
 
 wget http://mirrors.sonic.net/apache/hadoop/common/hadoop-3.1.1/hadoop-3.1.1.tar.gz
 
 # Run hadoop tarball
-tar -xzvf hadoop-3.1.1.tar.gz
+tar -xzf hadoop-3.1.1.tar.gz
 
 #Update export paths for current and future installs
 #Made bigger changes here - more code in original
@@ -69,7 +69,7 @@ hdfs dfs -ls retailhdfs
 wget http://apache.claz.org/hive/hive-3.1.1/apache-hive-3.1.1-bin.tar.gz
 
 #Extracting hive
-tar -xvzf apache-hive-3.1.1-bin.tar.gz
+tar -xzf apache-hive-3.1.1-bin.tar.gz
 
 #double check if Hive home is there
 echo $HIVE_HOME 
