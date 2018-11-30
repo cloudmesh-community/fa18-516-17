@@ -1,6 +1,9 @@
 from pyhive import hive
+from subprocess import check_output
 
-host_name = "localhost"
+ips = check_output(['hostname', '--all-ip-addresses'])
+
+host_name = ips
 
 #original IP was 10.0.2.15
 
