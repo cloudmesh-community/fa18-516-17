@@ -25,3 +25,7 @@ pip install pyhive
 #copy remote.py
 
 sudo cp /home/student/project/fa18-516-17/project-code/remote.py /home/hduser/
+
+#Hive Server2 start
+
+$HIVE_HOME/bin/hiveserver2
