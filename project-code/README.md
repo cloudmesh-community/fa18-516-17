@@ -29,8 +29,8 @@ Then do:
 RESTART THE VIRTUALBOX
 # Hadoop  Installation - User and User Group Creation
 $ sudo adduser --ingroup hadoop_group hduser
-use the password "projectpass"
-"Enter" for default; then Y
+use the Unix password "projectpass"
+"Enter" multiple times for default; then Y
 #HERE ON AUTOMATIC
 $ sudo adduser hduser sudo
 # Configuring SSH
