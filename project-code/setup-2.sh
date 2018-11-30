@@ -22,7 +22,16 @@ tar -xzvf hadoop-3.1.1.tar.gz
 
 sudo cat /home/student/project/fa18-516-17/project-code/envvar.txt >>  ~/.bashrc
 
-. ~/.bashrc
+export JAVA_HOME=~/cloudmesh/bin/jdk1.8.0_191
+export HADOOP_HOME=~/cloudmesh/bin/hadoop-3.1.1
+export YARN_HOME=$HADOOP_HOME
+export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+export PATH=$HADOOP_HOME/bin:$JAVA_HOME/bin:$PATH
+export HIVE_HOME=/home/hduser/cloudmesh/apache-hive-3.1.1-bin
+export TEMPLETON_HOME=~/cloudmesh/apache-hive-3.1.1-bin/hcatalog
+export HCATALOG_HOME=~/cloudmesh/apache-hive-3.1.1-bin/hcatalog
+export PATH=$PATH:$HIVE_HOME/bin:$TEMPLETON_HOME/bin
+
 java -version
 
 """If you have installed things properly there will be no errors. It will show the version as follows,
