@@ -31,12 +31,12 @@ RESTART THE VIRTUALBOX
 $ sudo adduser --ingroup hadoop_group hduser
 use the Unix password "projectpass"
 "Enter" multiple times for default; then Y
-#HERE ON AUTOMATIC
 $ sudo adduser hduser sudo
 # Configuring SSH
 $ ssh-keygen -t rsa
 # Enter file in which to save the key "hadkey"
 # Enter 2x to create password. IN general this is not a good idea, but for this case we make an exception.
+sudo su - hduser
 sudo sh /home/student/project/fa18-516-17/project-code/setup-2.sh
 
 ```
