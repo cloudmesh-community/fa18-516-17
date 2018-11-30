@@ -73,12 +73,11 @@ echo $HIVE_HOME
 
 sudo cp /home/student/project/fa18-516-17/project-code/hive-env.sh /home/hduser/cloudmesh/bin/hadoop-3.1.1
 
-cd ~/cloudmesh
-
+#Do I need this?
 hdfs dfs -mkdir tmp
-hdfs dfs -mkdir retailhdfs
-
 hdfs dfs -chmod g+w tmp
+
+hdfs dfs -mkdir retailhdfs
 hdfs dfs -chmod g+w retailhdfs
 
 
