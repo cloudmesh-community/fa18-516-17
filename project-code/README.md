@@ -58,7 +58,12 @@ $ sudo sh /home/student/project/fa18-516-17/project-code/setup-3.sh
 
 ## Test
 
+#Hive Server2 start
+$HIVE_HOME/bin/hiveserver2
+
 Execute
+#In a new Terminal
+cd ~
 $python remote.py
 
 #This should kick off a query tht runs on HIVE to calculate the average price by item
