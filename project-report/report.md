@@ -33,7 +33,7 @@ To survive, Retailers need to be open to change and use every advantage they hav
 
 ## Dataset
 
-In order to appreciate the storage and computational requirements it is important to understand the idiosyncrasies of a retail data set.  :o: I’ll describe the basics here before I describe the subset I chose for this project.
+In order to appreciate the storage and computational requirements it is important to understand the idiosyncrasies of a retail data set.
 
 ![Retail Project Diagram](images/retailprojectdiagram.PNG){#fig:RetailProjectDiagram}
 
@@ -53,9 +53,9 @@ The complexity with this data is that it can be hard to combine and mine with a 
 
 ### Project dataset.  
 
-For this project :o: I chose a very common metric set and masked the data so the proprietary retailer and supplier are unrecognizable:
+To begin this journey, a sample dataset with very common metrics was masked so the proprietary retailer and supplier are unrecognizable:
 
-*	Store – This column represents a single store.   The number of stores varies greatly by retailer.  In our dataset I included 300 stores.  Larger retailer chains can have more than 10,000 stores internationally.
+*	Store – This column represents a single store.   The number of stores varies greatly by retailer.  The dataset included 300 stores.  Larger retailer chains can have more than 10,000 stores internationally.
 *	Product – This is a proxy for a product UPC or Item Number.  Retailers will sell thousands of products in any given retail location.  For our purposes here 23 products were included.
 *	Period_Key – Date information in a YYYYMMDD format.  Many retailer datasets have two years of history available.  This dataset contains daily data from 10/23/2015 through 10/15/2017 which equates to 723 unique dates.
 *	Sales Dollars – Dollar value associated for each product, store and period
@@ -65,12 +65,12 @@ For this project :o: I chose a very common metric set and masked the data so the
 
 ## Implementation
 
-For this project I chose to implement a Hadoop based solution shown in the diagram below.  
+Hadoop was chosen as a foundation with the overall solution shown in the diagram below.  
 While a learning exercise there were reasons behind the selection of the components:
 
 ### Hadoop 
 
-I chose to use Apache Hadoop for retailers for several reasons.  First, the benefits Hadoop is capable of are well aligned with the needs of retailers.  According to the home page of the Hadoop project at Apache Software Foundation, "Apache Hadoop offers highly reliable, scalable, distributed processing of large data sets using simple programming models. With the ability to be built on clusters of commodity computers, Hadoop provides a cost-effective solution for storing and processing structured, semi- and unstructured data with no format requirements." [@Misc{fa18-516-17-Hadoop].  
+Apache Hadoop for retailers was chosen for several reasons.  First, the benefits Hadoop is capable of are well aligned with the needs of retailers.  According to the home page of the Hadoop project at Apache Software Foundation, "Apache Hadoop offers highly reliable, scalable, distributed processing of large data sets using simple programming models. With the ability to be built on clusters of commodity computers, Hadoop provides a cost-effective solution for storing and processing structured, semi- and unstructured data with no format requirements." [@Misc{fa18-516-17-Hadoop].  
 
 First and foremost, the cost advantages associated with open source software should not be overlooked.  Retailers working with razor thin margins are not only battling their on-line coutnerparts, there are a host of aggressive discount retailers such as Aldi, Family Dollar and Lidl that have been aggressively attacking with low cost private label product.  Saving money on operations for retailers is critical to maintain a margin.
 
@@ -82,11 +82,11 @@ New data formats in semi- and unstructured formats such as social media, shopper
  
 ### Linux
 
-I choose to install Hadoop on a Linux VirtualBox.  While Hadoop can be installed on Windows, Unix and Mac OS X there is an informal consensus on the internet that if you want to run production Hadoop with the fewest number of issues it is best to use Linux.  
+Also, as a foundation Hadoop was installed on a Linux VirtualBox.  While Hadoop can be installed on Windows, Unix and Mac OS X there is an informal consensus on the internet that if you want to run production Hadoop with the fewest number of issues it is best to use Linux.  
 
 ### HDFS
 
-Next I chose to use the native distributed file system for Hadoop to setup a distribute storage platform and integrate it with other computational platforms. The Hadoop Distributed File system (HDFS) is Hadoop's way of proven ability to store very large files on a cluster of commodity hardware. [@Misc{fa18-516-17-commodityhardware]
+Next, the native distributed file system for Hadoop was set and integratde it with other computational platforms. The Hadoop Distributed File system (HDFS) is Hadoop's way of proven ability to store very large files on a cluster of commodity hardware. [@Misc{fa18-516-17-commodityhardware]
 
 For a retailer with thousands of stores and thousands of products capturing all of the data necessary results in petabytes of data.  In addition, data is constantly being created as products move in the supply chain, sell in the stores and forecasting and planning are continually being done in the background.  HDFS accommodates these demands with the way it is designed.
 First, it is possible to store files of any size on HDFS.  The distributed file system breaks files down to files that potentially petabytes in size into smaller pieces or blocks and each piece could be stored on a different machine. In this system a HDFS master node is known as a NameNode and a slave node is called a DataNode. NameNodes maintain and manage all information about all files and directories stored on HDFS including the file system tree and metadata. DataNodes are the actual storage for the blocks. NameNode sends blocks to the DataNodes to store and DataNodes continuously report their status back including the list of blocks they are storing.  This makes it possible to store files of any size on a Hadoop Cluster.
