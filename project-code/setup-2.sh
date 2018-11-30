@@ -22,7 +22,7 @@ tar -xzvf hadoop-3.1.1.tar.gz
 
 sudo cat /home/student/project/fa18-516-17/project-code/envvar.txt >>  ~/.bashrc
 
-source ~/.bashrc
+. ~/.bashrc
 java -version
 
 """If you have installed things properly there will be no errors. It will show the version as follows,
