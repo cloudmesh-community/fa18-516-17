@@ -1,6 +1,9 @@
 from pyhive import hive
 
-host_name = "10.0.2.15"
+host_name = "localhost"
+
+#original IP was 10.0.2.15
+
 port = 10000
 user = "hduser"
 password = "projectpass"
