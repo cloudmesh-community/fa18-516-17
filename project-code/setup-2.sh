@@ -1,4 +1,4 @@
-#Install Java
+# Install Java
 # Create directory and navigate to it
 
 mkdir -p ~/cloudmesh/bin
@@ -76,23 +76,14 @@ sudo cp /home/student/project/fa18-516-17/project-code/hive-env.sh /home/hduser/
 cd ~/cloudmesh
 
 hdfs dfs -mkdir tmp
+hdfs dfs -mkdir retailhdfs
 
-
-hdfs dfs -chmod g+w retailhdfs
 hdfs dfs -chmod g+w tmp
+hdfs dfs -chmod g+w retailhdfs
 
 
-#Check hive version
-hive --version
-
-
-
-#Step 8: Create hive-site.xml not sure how to edit this… many references to the DB
-
-# I made several changes here - more code in original
-sudo cp /home/student/project/fa18-516-17/project-code/hive-site.xml ~/cloudmesh/apache-hive-3.1.1-bin/conf
-
-#save the hive-site.xml
+#Copy hive-site.xml
+sudo cp /home/student/project/fa18-516-17/project-code/hive-site.xml /home/hduser/cloudmesh/apache-hive-3.1.1-bin/conf
 
 # Derby is built into HIVE - works the purposes of this project on a local machine
 
@@ -101,4 +92,9 @@ sudo cp /home/student/project/fa18-516-17/project-code/hive-site.xml ~/cloudmesh
 
 #from here ~/cloudmesh
 cd ~/cloudmesh
+
+
+#Check hive version -delete this
+hive --version
+
 hive
