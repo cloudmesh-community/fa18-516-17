@@ -34,12 +34,6 @@ export PATH=$PATH:$HIVE_HOME/bin:$TEMPLETON_HOME/bin
 
 java -version
 
-"""If you have installed things properly there will be no errors. It will show the version as follows,
-java version "1.8.0_191"
-Java(TM) SE Runtime Environment (build 1.8.0_191-b12)
-Java HotSpot(TM) 64-Bit Server VM (build 25.191-b12, mixed mode)
-"""
-
 #Verify the hadoop installation:
 
 hadoop
