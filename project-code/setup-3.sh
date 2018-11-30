@@ -1,3 +1,5 @@
+sudo apt-get install python-pip
+
 # Pyhive installation
 
 # Install Dependent Modules
