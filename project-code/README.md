@@ -37,7 +37,7 @@ $ ssh-keygen -t rsa
 # Enter file in which to save the key "hadkey"
 # Enter 2x to create password. IN general this is not a good idea, but for this case we make an exception.
 sudo su - hduser
-sudo /home/student/project/fa18-516-17/project-code/setup-2.sh
+sudo /bin/bash /home/student/project/fa18-516-17/project-code/setup-2.sh
 
 ```
 
