@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Install Java
 # Create directory and navigate to it
 
