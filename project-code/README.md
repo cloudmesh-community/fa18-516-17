@@ -45,6 +45,13 @@ sudo /bin/bash /home/student/project/fa18-516-17/project-code/setup-2.sh
 
 # From the hive> prompt create the table by copying in the following:
 CREATE EXTERNAL TABLE IF NOT EXISTS retaildata(Period_Key INT, Item_Key INT, Store_Key INT, POSQty INT, POSSales DOUBLE, Demand_Dollars DOUBLE) ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' STORED AS TEXTFILE LOCATION '/home/hduser/cloudmesh/retailhdfs/hivedbtable.txt' TBLPROPERTIES("skip.header.line.count"="1");
+
+# From the hive> prompt create the table by copying in the following:
+
+load data local inpath '/home/hduser/cloudmesh/retailhdfs/retaildata2.txt' into table retaildata;
+
+# Control C to exit Hive
+
 #setup-3 start
 $ sudo sh /home/student/project/fa18-516-17/project-code/setup-3.sh
 
