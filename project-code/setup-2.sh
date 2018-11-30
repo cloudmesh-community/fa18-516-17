@@ -1,5 +1,3 @@
-sudo su - hduser
-
 #Install Java
 # Create directory and navigate to it
 
