@@ -16,6 +16,7 @@ Execute
 $ sudo apt-get install git
 $ mkdir project
 $ cd project
+$ sudo apt install git
 $ git clone https://github.com/cloudmesh-community/fa18-516-17.git
 $ cd ~/project/fa18-516-17/project-code
 $ sudo sh setup-1.sh
