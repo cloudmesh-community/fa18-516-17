@@ -98,7 +98,7 @@ For the purposes of the project I’m keeping the NameNode and the DataNode on t
 
 Commodity Hardware means using standard commonly used hardware without the need to specialized high-end systems. Being able to use more common server configuration systems to build a reliable cluster with HDFS results in saving money which is extremely important to this demographic.
 
-###Hive
+### Hive
 
 *Since its incubation in 2008, Apache Hive is considered the defacto standard for interactive SQL queries over petabytes of data in Hadoop. Data analysts use Hive to query, summarize, explore and analyze that data, then turn it into actionable business insight* [@fa18-516-17-apachehive].
 
