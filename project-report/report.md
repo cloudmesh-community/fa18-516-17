@@ -7,7 +7,6 @@
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-17/blob/master/project-report/report.md)
 | code: [:cloud:](https://github.com/cloudmesh-community/fa18-516-17/blob/master/project-code/README.sh)
 
-:o: punctuation errors prevent readers to know wich citation belongs to which sentence
 
 **:mortar_board: Learning Objectives**
 
