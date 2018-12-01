@@ -49,25 +49,22 @@ CREATE EXTERNAL TABLE IF NOT EXISTS retaildata(Period_Key INT, Item_Key INT, Sto
 load data local inpath '/home/hduser/cloudmesh/retailhdfs/retaildata2.txt' into table retaildata;
 
 # Control C to exit Hive
+$ sudo sh /home/student/project/fa18-516-17/project-code/setup-3.sh
 
 ```
 
-#setup-3 start
-$ sudo sh /home/student/project/fa18-516-17/project-code/setup-3.sh
+Wait until processing finishes then:
 
-
+```bash
 ## Test
-
 #Hive Server2 start
 $HIVE_HOME/bin/hiveserver2
 
-Execute
-#In a new Terminal
+#In a NEW TERMINAL
+
 cd ~
 $python remote.py
 
 #This should kick off a query tht runs on HIVE to calculate the average price by item
-```bash
-$ test.sh
 ```
 
