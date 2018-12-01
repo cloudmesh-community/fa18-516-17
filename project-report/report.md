@@ -102,7 +102,7 @@ Commodity Hardware means using standard commonly used hardware without the need 
 
 *Since its incubation in 2008, Apache Hive is considered the defacto standard for interactive SQL queries over petabytes of data in Hadoop. Data analysts use Hive to query, summarize, explore and analyze that data, then turn it into actionable business insight* [@fa18-516-17-apachehive].
 
-Hive works well with HDFS because it organizes the data into databases, tables, buckets and clusters.  These table partitioning and bucketing options allow for efficient storage and data retrieval.  This abstract structure allows the system to only load the relevant parts of the table during query processing.  Querying less data results in faster query execution times [@fa18-516-17-hiveorganization].
+Hive works well with HDFS because it organizes the data into databases, tables, buckets and clusters.  Partitioning these tables and bucketing options allows for efficient storage and data retrieval.  This abstract structure allows the system to only load the relevant parts of the table during query processing.  Querying less data results in faster query execution times [@fa18-516-17-hiveorganization].
 
 Just like in other industries, Retail IT professionals often have SQL skills so using the HiveQL which is very similar to SQL would be beneficial for adoption.  In addition, the hive structure will do an effective job pruning the large datasets that a retailer has to just the relevant measures and attributes needed in a report or analysis.
 
