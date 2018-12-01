@@ -36,7 +36,7 @@ To survive, Retailers need to be open to change and use every advantage they hav
 
 In order to appreciate the storage and computational requirements it is important to understand the idiosyncrasies of a retail data set.
 
-![Retail Project Diagram](images/retailprojectdiagram1.PNG){#fig:RetailProjectDiagram}
+![Retail Project Diagram](images/retailprojectdiagram2.PNG){#fig:RetailProjectDiagram}
 
 Data available to retailers is heavily nuanced as each retailer collects and houses data in a different way.  There are a host of internal metrics required in the ordinary course of business.  In addition, there are a mounting number of external datasets now required to effectively compete.  All of this makes for a challenge when it comes to acquiring, blending and putting the data to use.  
 
