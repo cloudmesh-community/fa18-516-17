@@ -22,28 +22,25 @@ $ cd ~/project/fa18-516-17/project-code
 $ sudo sh setup-1.sh
 ```
 
-Then do 
+Wait until processing finishes then:
 
 ```bash
-
-Then do:
-RESTART THE VIRTUALBOX
-# Hadoop  Installation - User and User Group Creation
+# RESTART THE VIRTUALBOX
 $ sudo adduser --ingroup hadoop_group hduser
-use the Unix password "projectpass"
-"Enter" multiple times for default; then Y
+# Enter the Unix password "projectpass"
+# Enter multiple times for default; then Y
 $ sudo adduser hduser sudo
-# Configuring SSH
 $ ssh-keygen -t rsa
-# Enter file in which to save the key "hadkey"
+# File in which to save the key: "hadkey"
 # Enter 2x to create password. IN general this is not a good idea, but for this case we make an exception.
-sudo su - hduser
-sudo /bin/bash /home/student/project/fa18-516-17/project-code/setup-2.sh
+$ sudo su - hduser
+$ sudo /bin/bash /home/student/project/fa18-516-17/project-code/setup-2.sh
 
 ```
 
-## Configuration
+Wait until processing finishes then:
 
+```bash
 # From the hive> prompt create the table by copying in the following:
 CREATE EXTERNAL TABLE IF NOT EXISTS retaildata(Period_Key INT, Item_Key INT, Store_Key INT, POSQty INT, POSSales DOUBLE, Demand_Dollars DOUBLE) ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' STORED AS TEXTFILE LOCATION '/home/hduser/cloudmesh/retailhdfs/hivedbtable.txt' TBLPROPERTIES("skip.header.line.count"="1");
 
@@ -52,6 +49,8 @@ CREATE EXTERNAL TABLE IF NOT EXISTS retaildata(Period_Key INT, Item_Key INT, Sto
 load data local inpath '/home/hduser/cloudmesh/retailhdfs/retaildata2.txt' into table retaildata;
 
 # Control C to exit Hive
+
+```
 
 #setup-3 start
 $ sudo sh /home/student/project/fa18-516-17/project-code/setup-3.sh
