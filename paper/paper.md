@@ -1,5 +1,6 @@
 # Cloud Security Alliance (CSA) :wave: fa18-516-17
 :o: BP I fixed the incorrect citations!
+
 :o: bulleted list use phrase sush as according to - Fixed below! it was not fixed, sio i fixed it; BP - Thanks - I fixed the last one!
 
 :o: this is incomplete as entire sections in the introductions are missing according to you, therfore this will not be further reviewed till not fixed - BP - Fixed below! 
