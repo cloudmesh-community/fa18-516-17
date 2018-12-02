@@ -91,5 +91,3 @@ Accoring to thier CCSP page,
 ### Working Groups
 
 As mentioned above working groups are a great way to learn and share with industry experts on topics you or your institution are focused on [@fa18-516-17-groups].
-
-A list of upcoming meetings is published on the CSA site and meetings are open to the public to join!
