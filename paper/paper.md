@@ -68,12 +68,11 @@ These security guidelines use NIST industry standards and are easy to read with 
 This is an industry-recognized security assurance in the cloud. STAR encompasses key principles of transparency, rigorous auditing, and harmonization of standards.
 According to the CSA website, 
 
-> *STAR consists of three levels of assurance (Self Assessment, 3rd party certification and continuous auditing), based upon:
->
+STAR consists of three levels of assurance (Self Assessment, 3rd party certification and continuous auditing), based upon:
+
 > *	The CSA Cloud Controls Matrix (CCM)
 > *	The Consensus Assessments Initiative Questionnaire (CAIQ)
-> *	The CSA Code of Conduct for GDPR Compliance*
-> [@fa18-516-17-STAR].
+> *	The CSA Code of Conduct for GDPR Compliance [@fa18-516-17-STAR].
 
 #### Certificate of Cloud Security Knowledge (CCSK) 
 
