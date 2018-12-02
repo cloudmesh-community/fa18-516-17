@@ -1,4 +1,4 @@
-# Cloud Security Alliance (CSA) :wave: fa18-516-17
+# Cloud Security Alliance (CSA) :smiley: fa18-516-17
 :o: BP I fixed the incorrect citations!
 
 :o: bulleted list use phrase sush as according to - Fixed below! it was not fixed, sio i fixed it; BP - Thanks - I fixed the last one!
