@@ -13,7 +13,6 @@ Setup a VirtualBox with Ubuntu per class instruction video:
 Execute
 
 ```bash
-$ sudo apt-get install git
 $ mkdir project
 $ cd project
 $ sudo apt-get install git
