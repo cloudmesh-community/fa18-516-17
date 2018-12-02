@@ -1,6 +1,6 @@
 # Cloud Security Alliance (CSA) :wave: fa18-516-17
-
-:o: bulleted list use phrase sush as according to - Fixed below! it was not fixed, sio i fixed it
+:o: BP I fixed the incorrect citations!
+:o: bulleted list use phrase sush as according to - Fixed below! it was not fixed, sio i fixed it; BP - Thanks - I fixed the last one!
 
 :o: this is incomplete as entire sections in the introductions are missing according to you, therfore this will not be further reviewed till not fixed - BP - Fixed below! 
 
@@ -12,12 +12,12 @@
 
 The Cloud Security Alliance (CSA) is a nonprofit organization that provides a variety of security resources to institutions including guidelines, education and best practices for adoption.  There are many different audiences and variety of cloud and compute configurations.  As this is the case, the CSA has a diverse membership, a variety of research areas and a breadth of recommendations and guidelines.  In this chapter CSA topics include:
 
-* About the CSA
-* Guiding Principles
-* History
-* Research areas
-* Membership
-* Best ways to leverage CSA
+> * About the CSA
+> * Guiding Principles
+> * History
+> * Research areas
+> * Membership
+> * Best ways to leverage CSA
 
 ## About the CSA
 
@@ -28,11 +28,11 @@ The industry group also provides security education and offers guidance to compa
 
 The Cloud Security Alliance members are united by the following objectives according to thier LinkedIn page: 
 
-> * "Promote a common level of understanding between the consumers and providers of 
->   cloud computing regarding the necessary security requirements and attestation of assurance. 
+> * Promote a common level of understanding between the consumers and providers of 
+> * Cloud computing regarding the necessary security requirements and attestation of assurance. 
 > * Promote independent research into best practices for cloud computing security. 
 > * Launch awareness campaigns and educational programs on the appropriate uses of cloud computing and cloud security solutions. 
-> * Create consensus lists of issues and guidance for cloud security assurance" [@fa18-516-17-CSA-LinkedIn].
+> * Create consensus lists of issues and guidance for cloud security assurance [@fa18-516-17-CSA-LinkedIn].
 
 ## History
 
@@ -72,7 +72,7 @@ According to the CSA website,
 > *	The CSA Cloud Controls Matrix (CCM)
 > *	The Consensus Assessments Initiative Questionnaire (CAIQ)
 > *	The CSA Code of Conduct for GDPR Compliance*
-> [@fa18-516-17-STAR]
+> [@fa18-516-17-STAR].
 
 #### Certificate of Cloud Security Knowledge (CCSK) 
 
