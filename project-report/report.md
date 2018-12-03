@@ -13,7 +13,7 @@
 
 > * Describe the unique data storage and compute needs of the Retail Industry
 > * Implement portions of a cloud computing environment that would meet those needs
-> * Describe the performance of the prescribed cloud computing environment on a sample retail dataset
+> * Describe the performance of the prescribed environment on a sample retail dataset
 > * Highlight some additional architecture opportunities outside the scope that would further help the Retail sector
 
 
@@ -118,3 +118,12 @@ Hadoop and HDFS require a database and the dataset in the example is small Derby
 With Retail data the data size and concurrent processing needs quickly increase.  Traditional relational databases have been optimized for years and are work for conventional use cases where data is well defined and structured.  As we add in unstructured data Hadoop and HDFS Azure blob storage scales well.  Azure blobs are capable of storing a variety of types of files from documents to database backups.  Similar blobs are stored in containers.  Both containers and blobs do not have hard size limitations.
 
 *Azure Blob storage can be accessed from Hadoop (available through HDInsight). HDInsight can use a blob container in Azure Storage as the default file system for the cluster. Through a Hadoop distributed file system (HDFS) interface provided by a WASB driver, the full set of components in HDInsight can operate directly on structured or unstructured data stored as blobs. Azure Blob storage can also be accessed via Azure SQL Data Warehouse using its PolyBase feature* [@fa18-516-17-azureblob]
+
+## Benchmark
+
+## Conclusion
+
+Given the increasing complexity of retailer data the only way of scaling the the architecture in a way to meet the cost, reliability and scale required is through a cloud computing model.  We've shown that a combination of Hadoop, HDFS, Hive and PyHive lay a solid foundation.   
+
+We've successfully implemented portions of a cloud computing environment that would meet those needs and described the performance of the of this environment on a sample retail dataset.
+> * Highlight some additional architecture opportunities outside the scope that would further help the Retail sector
