@@ -14,7 +14,7 @@
 > * Describe the unique data storage and compute needs of the Retail Industry
 > * Implement portions of a cloud computing environment that would meet those needs
 > * Describe the performance of the prescribed cloud computing environment on a sample retail dataset
-> * Highlight some additional architecture opportunities outside the scope of this project that would further help the Retail sector
+> * Highlight some additional architecture opportunities outside the scope that would further help the Retail sector
 
 
 ---
@@ -59,7 +59,7 @@ There are several external sources of data that have recently entered the market
 > *	Ecommerce: Purchases made on-line is also a desirable subset of the data. Ecommerce continues to pull purchases away from traditional retailers and understanding which products have better potential to sell on-line is considered essential
 The complexity with this data is that it can be hard to combine and mine with a retailers internal transactional and operational data.
 
-### Project dataset.  
+### Dataset.  
 
 A simple sample dataset with very common metrics was masked so any potential proprietary retailer and supplier values are unrecognizable:
 
@@ -92,7 +92,7 @@ For a retailer with thousands of stores and thousands of products capturing all 
 
 First, it is possible to store files of any size on HDFS.  The distributed file system breaks files down to files that potentially petabytes in size into smaller pieces or blocks and each piece could be stored on different machines. In this system, a HDFS master node known as a NameNode and a slave node is called a DataNode. NameNodes maintain and manage all information about all files and directories stored on HDFS including the file system tree and metadata. DataNodes are the actual storage for the blocks. NameNode sends blocks to the DataNodes to store and DataNodes continuously report their status back including the list of blocks they are storing.  This makes it possible to store files of any size on a Hadoop Cluster.
 
-For the purposes of the project we are keeping the NameNode and the DataNode on the same VirtualBox with a small set of sample data, in order to do this at scale leveraging the HDFS structure using NameNodes and DataNodes distributed across many servers would be required.  In addition, to fully leverage HDFS the goal would be to store the retailer data in larger files instead of millions of smaller files to be able to have the NameNode use less memory.
+We are keeping the NameNode and the DataNode on the same VirtualBox with a small set of sample data, in order to do this at scale leveraging the HDFS structure using NameNodes and DataNodes distributed across many servers would be required.  In addition, to fully leverage HDFS the goal would be to store the retailer data in larger files instead of millions of smaller files to be able to have the NameNode use less memory.
 
 Commodity Hardware means using standard commonly used hardware without the need to specialized high-end systems. As discussed earlier, less cost is important for retailers so being able to use more common server configuration systems to build a reliable cluster with HDFS results is extremely important.
 
@@ -104,7 +104,7 @@ Hive works well with HDFS because it organizes the data into databases, tables, 
 
 Just like in other industries, Retail IT professionals often have SQL skills so using the HiveQL which is very similar to SQL would be beneficial for adoption.  In addition, the hive structure will do an effective job pruning the large datasets that a retailer has to just the relevant measures and attributes needed in a report or analysis.
 
-Since this is the case, SQL against Hive to compute the average price was leveraged here.  Since the dataset was smaller for this project, all of the Hive organization features weren’t leveraged.  Against a larger, more complex retail dataset more features would be used.
+Since this is the case, SQL against Hive to compute the average price was leveraged here.  Since the dataset here was smaller, all of the Hive organization features weren’t leveraged.  Against a larger, more complex retail dataset more features would be used.
 
 ### API
 There needs to be a way to access the data through an API interface.  As a simpler implementation with python, PyHive is the logical API for illustrative purposes with Hive.  Per the Python Software foundation, Pyhive is *a collection of Python DB-API and SQLAlchemy interfaces for Presto and Hive* [@fa18-516-17-pyhive].
