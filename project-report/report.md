@@ -121,7 +121,7 @@ Since the Hadoop, HDFS and HIVE implmentation will get complex as different type
 
 ## Benchmark
 
-The calculation was run on VirtualBox on a local computer with 8MB of RAM.  To run the select query it took 13.1 seconds.
+Using the components above, the calculation for average price was run on VirtualBox on a local computer with 8MB of RAM.  The query itself took 13.1 seconds.
 
 ### Query and Results
 Select Item_Key,(POSSales/POSQty) AS AverageRetail FROM (Select Item_Key, sum(POSSales) AS POSSales, sum(POSQty) AS POSQty From retaildata GROUP BY Item_Key) byitem ORDER BY Item_Key;
