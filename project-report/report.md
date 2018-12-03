@@ -130,6 +130,6 @@ The query was run for the average price by store as shown here ![Average Price R
 
 ## Conclusion
 
-Given the increasing complexity of retailer data the only way of scaling the the architecture in a way to meet the cost, reliability and scale required is through a cloud computing model.  We've shown that a combination of Hadoop, HDFS, Hive and PyHive lay a solid foundation.   
+We've descibed here how retailers data needs are ever expanding. In order to meet those needs we've shown that it will take a reliable, scalable architecture at lower price point.  The cloud computing model delivered through a combination of Hadoop, HDFS and Hive will meet those needs.
 
-We've successfully implemented portions of a cloud computing environment that would meet those needs and described the performance of the of this environment on a sample retail dataset.  In addition several future considerations were called out as ways to enhance and scale the architecture to include additional technologies that would further help the retail sector.
+We've successfully implemented portions of this environment and illustrated the performance on a sample retail dataset.  In addition, several future considerations were called out as ways to enhance and scale the architecture to further meet the needs of retailers.
