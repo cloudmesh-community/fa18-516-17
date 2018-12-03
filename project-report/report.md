@@ -63,22 +63,22 @@ The variety and amount of data available in the datasets makes pulling and stori
 
 Here is a description of the sample dataset:
 
-> *	Store – This column represents a single store.   The number of stores varies greatly by retailer.  The dataset included 300 stores.  Larger retailer chains can have more than 10,000 stores internationally.
+> *	Store – Values here represent individual stores.   The number of stores varies greatly by retailer.  The dataset included 300 stores.  Larger retailer chains can have more than 10,000 stores internationally.
 > *	Product – This is a proxy for a product UPC or Item Number.  Retailers will sell thousands of products in any given retail location.  For our purposes here 23 products were included.
 > *	Period_Key – Date information in a YYYYMMDD format.  Many retailer datasets have two years of history available.  This dataset contains daily data from 10/23/2015 through 10/15/2017 which equates to 723 unique dates.
-> *	Sales Dollars – Dollar value associated for each product, store and period.
+> *	Sales Dollars – US Dollars associated with the sales for each product, store and period.
 > *	Sales Units – Number of units sold for each product, store and period.
-> *	Potential Demand – potential revenue associated with having the product available for sale (no out of stocks).  This is illustrative of a calculated metric calculated from existing metrics.
+> *	Potential Demand – Potential revenue associated with having the product available for sale (no out of stocks).
 
 ## Implementation
 
-Hadoop was chosen as a foundation with the overall solution shown in the diagram ![Retail Project Diagram](images/retailprojectdiagram2.PNG){#fig:RetailProjectDiagram}:
+Diagram of the overall solution ![Retail Project Diagram](images/retailprojectdiagram2.PNG){#fig:RetailProjectDiagram}:
 
 ### Hadoop
 
 Apache Hadoop for retailers was chosen for several reasons.  First, Hadoop's capabilities are well aligned with the needs of retailers.  According to the home page of the Hadoop project at Apache Software Foundation, *Apache Hadoop offers highly reliable, scalable, distributed processing of large data sets using simple programming models. With the ability to be built on clusters of commodity computers, Hadoop provides a cost-effective solution for storing and processing structured, semi and unstructured data with no format requirements* [@fa18-516-17-Hadoop].
 
-First and foremost, the cost advantages associated with open source software should not be overlooked.  Retailers have razor thin margins.  There is stiff competition from online counterparts and a host of aggressive discount retailers such as Aldi, Family Dollar and Lidl with low-cost private label product.  In order to save cost and maintain their margin, saving money on infrastructure is criticalfor retailers.
+First and foremost, the cost advantages associated with open source software should not be overlooked.  Retailers have razor thin margins.  There is stiff competition from online retails and a host of aggressive discount retailers such as Aldi, Family Dollar and Lidl with low-cost private label products.  In order to save cost and maintain their margin, saving money on infrastructure is criticalfor retailers.
 
 Retailers also need reliable data processing and distribution at scale.  Operational data is the lifeblood of a retailer.  If the computer-assisted order system does not have reliable inventory, sales and forecast information from a store, it will not be able to issue purchase orders to suppliers and keep the product in stores for ongoing business. Rather than relying on the hardware to rely on redundancy and high-availability, Hadoop detects and handles failures at the application layer and delivers a high-availability service on top of a cluster of computers to avoid a whole system failure [@fa18-516-17-highavailablity].
 
@@ -86,13 +86,13 @@ The application layer also allows for adding more datasets as they become availa
 
 ### HDFS
 
-The Hadoop Distributed File system (HDFS) is Hadoop's way of proven ability to store very large files on a cluster of commodity hardware [@fa18-516-17-commodityhardware].
+The Hadoop Distributed File system (HDFS) is Hadoop's proven ability to distribute very large files on a cluster of commodity hardware [@fa18-516-17-commodityhardware].
 
-For a retailer with thousands of stores and thousands of products capturing all of the data necessary results in petabytes of data.  In addition, data is constantly being created as products move in the supply chain, sell in the stores and forecasting and planning are continually being processed in the background.  HDFS accommodates these demands with its design.
+For a retailer with thousands of stores and thousands of products capturing all of the data necessary results in petabytes of data.  In addition, data is constantly being created as products move in the supply chain, sell in the stores and forecasting and planning are continually being processed in the background.  HDFS accommodates these demands.
 
 First, it is possible to store files of any size on HDFS.  The distributed file system breaks down files that potentially petabytes in size into smaller pieces or blocks and each piece could be stored on different machines if needed. In this system, an HDFS master node known as a NameNode and a slave node is called a DataNode. NameNodes maintain and manage all information about all files and directories stored on HDFS including the file system tree and metadata. DataNodes are the actual storage for the blocks. NameNode sends blocks to the DataNodes to store and DataNodes continuously report their status back including the list of blocks they are storing.  This makes it possible to store files of any size on a Hadoop cluster.
 
-For this implementation, we are keeping the NameNode and the DataNode on the same VirtualBox with the set of sample data. As a future consideration, to do this at scale, the DataNodes would be distributed across many servers.  In addition, to fully leverage HDFS, the retailer data would be stored in larger files instead of millions of smaller files resulting in the NameNode using less memory.
+For this implementation, we are keeping the NameNode and the DataNode on the same VirtualBox with the set of sample data. As a future consideration, the DataNodes would be distributed across many servers.  In addition, to fully leverage HDFS, the retailer data would be stored in larger files instead of millions of smaller files resulting in the NameNode using less memory.
 
 Commodity Hardware means using standard commonly used hardware without the need to specialized high-end systems. As discussed earlier, less cost is important for retailers so being able to use more common server configuration systems to build a reliable cluster with HDFS results is extremely important.
 
@@ -104,7 +104,7 @@ Hive works well with HDFS because it organizes the data into databases, tables, 
 
 Just like in other industries, Retail IT professionals often have SQL skills so using the HiveQL which is very similar to SQL would be beneficial for adoption.  In addition, the hive structure will do an effective job pruning the large datasets that a retailer has to just the relevant measures and attributes needed in a report or analysis.
 
-Since this is the case, SQL against Hive to compute the average price was leveraged here.  As a future consideration with a larger dataset more of the Hive organization features should be leveraged.
+Since this is the case, SQL against Hive to compute the average price was leveraged here.  As a future consideration with a larger dataset more of the Hive partitioning and bucketing features should be leveraged.
 
 ### Data Storage
 
@@ -118,7 +118,7 @@ As unstructured data is added to Hadoop and HDFS, a future consideration is to u
 ### API
 There needs to be a way to access the data through an API.  As a simpler implementation with python, PyHive is the logical API for illustrative purposes with Hive.  Per the Python Software Foundation, Pyhive is *a collection of Python DB-API and SQLAlchemy interfaces for Presto and Hive* [@fa18-516-17-pyhive].
 
-Since the Hadoop, HDFS and HIVE implementation will get complex as different types of data are added, a future consideration is to use WebHCat.  WebHCat is a REST API for HCatalog which is the storage management layer for Hadoop. WebHCat also works well with HDInsight making it ideal for an Azure Blob Microsoft implementation.  It is also a logical alternative as more Hadoop features as it can interact with more than hive.
+Since the Hadoop, HDFS and HIVE implementation will get complex as different types of data are added, a future consideration is to use WebHCat.  WebHCat is a REST API for HCatalog which is the storage management layer for Hadoop. WebHCat also works well with HDInsight making it ideal for an Azure Blob Microsoft implementation.  In addition it can interact with more functionality of Hadoop than PyHive.
 
 ## Benchmark
 
@@ -131,6 +131,6 @@ The query was run for the average price by store as shown here ![Average Price R
 
 ## Conclusion
 
-We've described here how retailers data needs are ever expanding. In order to meet those needs, we've shown that it will take a reliable, scalable architecture at the lower price point.  The cloud computing model delivered through a combination of Hadoop, HDFS and Hive will meet those needs.
+We've described how retailer data needs are continually expanding. In order to meet those needs, we've shown that it will take a reliable, scalable architecture at a lower price point.  The cloud computing model delivered through a combination of Hadoop, HDFS, and Hive described above meets those needs.
 
-We've successfully implemented portions of this environment and illustrated the performance on a sample retail dataset.  In addition, several future considerations were called out as ways to enhance and scale the architecture to further meet the needs of retailers.
+We've successfully implemented portions of this environment and illustrated the performance on a sample retail dataset.  In addition, several future considerations were called out that will enhance and scale the architecture as additional complexity is added.
