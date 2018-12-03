@@ -63,6 +63,7 @@ Wait until processing finishes then:
 $ $HIVE_HOME/bin/hiveserver2
 
 #In a NEW TERMINAL
+sudo su - hduser
 cd ~
 $python remote.py
 
