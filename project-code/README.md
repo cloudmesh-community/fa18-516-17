@@ -47,7 +47,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS retaildata(Period_Key INT, Item_Key INT, Sto
 load data local inpath '/home/hduser/cloudmesh/retailhdfs/retaildata2.txt' into table retaildata;
 
 # From the hive> prompt - Test if it works!  Run the query to create average price
-#Select Item_Key,(POSSales/POSQty) AS AverageRetail FROM (Select Item_Key, sum(POSSales) AS POSSales, sum(POSQty) AS POSQty From retaildata GROUP BY Item_Key) byitem ORDER BY Item_Key;
+Select Item_Key,(POSSales/POSQty) AS AverageRetail FROM (Select Item_Key, sum(POSSales) AS POSSales, sum(POSQty) AS POSQty From retaildata GROUP BY Item_Key) byitem ORDER BY Item_Key;
 
 # Now to run the query from PyHive
 # Control C to exit Hive
