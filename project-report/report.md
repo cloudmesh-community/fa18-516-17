@@ -99,11 +99,11 @@ Commodity Hardware means using standard commonly used hardware without the need 
 
 *Since its incubation in 2008, Apache Hive is considered the defacto standard for interactive SQL queries over petabytes of data in Hadoop. Data analysts use Hive to query, summarize, explore and analyze that data, then turn it into actionable business insight* [@fa18-516-17-apachehive].
 
-Hive works well with HDFS because it organizes the data into databases, tables, buckets and clusters.  Partitioning these tables and bucketing options allows for efficient storage and data retrieval.  This abstract structure allows the system to only load the relevant parts of the table during query processing.  Querying less data results in faster query execution times [@fa18-516-17-hiveorganization].
+Hive works well with HDFS because it organizes the data into databases, tables, buckets and clusters.  Partitioning and bucketing these tables allows for efficient storage and data retrieval.  This abstract structure allows the system to only load the relevant parts of the table during query processing.  Querying less data results in faster query execution times [@fa18-516-17-hiveorganization].
 
 Just like in other industries, Retail IT professionals often have SQL skills so using the HiveQL which is very similar to SQL would be beneficial for adoption.  In addition, the hive structure will do an effective job pruning the large datasets that a retailer has to just the relevant measures and attributes needed in a report or analysis.
 
-Since this is the case, SQL against Hive to compute the average price was leveraged here.  Since the dataset here was smaller, all of the Hive organization features weren’t leveraged.  Against a larger, more complex retail dataset more features would be used.
+Since this is the case, SQL against Hive to compute the average price was leveraged here.  As a future consideration with a larger dataset more of the Hive organization features should be leveraged.
 
 ### API
 There needs to be a way to access the data through an API interface.  As a simpler implementation with python, PyHive is the logical API for illustrative purposes with Hive.  Per the Python Software foundation, Pyhive is *a collection of Python DB-API and SQLAlchemy interfaces for Presto and Hive* [@fa18-516-17-pyhive].
