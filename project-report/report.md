@@ -16,7 +16,6 @@
 > * Describe the performance of the prescribed environment on a sample retail dataset
 > * Highlight some additional architecture opportunities outside the scope that would further help the Retail sector
 
-
 ---
 
 Keywords: Hadoop, Hive, WebHCat, Java, Retail
@@ -82,7 +81,7 @@ First and foremost, the cost advantages associated with open source software sho
 
 Retailers also need reliable data processing and distribution at scale way.  Operational data is the lifeblood of a retailer.  If the computer assisted order system does not have reliable inventory, sales and forecast information from a store, it will not be able to issue purchase orders to suppliers and keep product on stores for ongoing business. Rather than relying on the hardware to rely on redundancy and high-availability, Hadoop detects and handles failures at the application layer and delivers a high-availability service on top of a cluster of computers to avoid a whole system failure [@fa18-516-17-highavailablity].
 
-The application layer also allows for adding more datasets as they become available which is a key retailer need.  The Hadoop framework scales from processing on a single server to thousands of machines and uses the computation and storage available on each.  This flexiblity is needed as as new formats of semi and unstructured data are continually becoming available to retailers.  New data formats in semi and unstructured formats such as social media, shopper sentiment can be handled by Hadoop as well.  Traditional Enterprise Data Warehouse (EDW) would struggle with that integration as they don't do as well with semi structured data.  [@fa18-516-17-Hadoop].
+The application layer also allows for adding more datasets as they become available which is a key retailer need.  The Hadoop framework scales from processing on a single server to thousands of machines and uses the computation and storage available on each.  This flexiblity is needed as as new formats of semi and unstructured data are continually becoming available to retailers.  New data formats in semi and unstructured formats such as social media, shopper sentiment can be handled by Hadoop as well.  Traditional Enterprise Data Warehouse (EDW) would struggle with that integration as they don't do as well with semi structured data [@fa18-516-17-Hadoop].
 
 ### HDFS
 
@@ -121,9 +120,15 @@ With Retail data the data size and concurrent processing needs quickly increase.
 
 ## Benchmark
 
+The calculation was run on VirtualBox on a local computer with 8MB of RAM.  To run the select query it took 13.1 seconds.
+
+### Query and Results
+Select Item_Key,(POSSales/POSQty) AS AverageRetail FROM (Select Item_Key, sum(POSSales) AS POSSales, sum(POSQty) AS POSQty From retaildata GROUP BY Item_Key) byitem ORDER BY Item_Key;
+
+The query was run for the average price by store as shown here ![Average Price Results](images/queryresults.png){#fig:RetailAveragePrice}:
+
 ## Conclusion
 
 Given the increasing complexity of retailer data the only way of scaling the the architecture in a way to meet the cost, reliability and scale required is through a cloud computing model.  We've shown that a combination of Hadoop, HDFS, Hive and PyHive lay a solid foundation.   
 
-We've successfully implemented portions of a cloud computing environment that would meet those needs and described the performance of the of this environment on a sample retail dataset.
-> * Highlight some additional architecture opportunities outside the scope that would further help the Retail sector
+We've successfully implemented portions of a cloud computing environment that would meet those needs and described the performance of the of this environment on a sample retail dataset.  In addition several future considerations were called out as ways to enhance and scale the architecture to include additional technologies that would further help the retail sector.
