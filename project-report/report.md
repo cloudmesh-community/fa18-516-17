@@ -25,42 +25,42 @@ Keywords: Hadoop, Hive, WebHCat, Java, Retail
 ## Introduction
 
 
-As with other industries, the retail industry today is undergoing a major shift.  Traditional brick and mortar stores used to rely on practiced merchandising techniques such as printed flyers, television advertising and low prices to drive traffic into stores.  Today, shoppers are electing for convenience more than ever before.  This is driving growth in a variety of time-saving Omni channel purchasing behaviors.  Shoppers are voting with their wallets to have more product shipped to their door and for more convenient services such as grocery pick-up.
+As with other industries, the retail industry today is undergoing a major shift.  Traditional brick and mortar stores used to rely on practiced merchandising techniques such as printed flyers, television advertising, and low prices to drive traffic into stores.  Today, shoppers are electing for convenience more than ever before.  This is driving growth in a variety of time-saving Omni channel purchasing behaviors.  Shoppers are voting with their wallets to have more product shipped to their door and for more convenient services such as grocery pick-up.
 
 In tandem with a more demanding shopper, there is also a fundamental shift in the sheer amount of data collected on the path taken to purchase products. For example:
-> * Shoppers now research and initiate more purchases from thier smart devices.
-> * There are more *shopper interaction* datapoints captured in digital advertisements
+> * Shoppers now research and initiate more purchases from their smart devices.
+> * There are more *shopper interaction* data points captured in digital advertisements
 > * Social media impact on brands and products
-> * Multiple ecommerce outlets reselling product through new and different channels
+> * Multiple e-commerce outlets reselling product through new and different channels
 
 In short, there is more data than ever available for retailers to leverage.
 
-To survive, Retailers need to be open to change and use every advantage they have.  A fundamental element of developing their strategy is having a saleable cloud architecture to leverage the masses of data that they should be collecting about their shoppers.  The challenge is that as technology has evolved each retailer responded differently and implemented a piecemeal data strategy to accommodate data as it becomes available.  The challenge is to offer a cloud based highly scalable distributed architecture that will allow retailers to process the data a variety and integrate new data sets as they become available.
+To survive, Retailers need to be open to change and use every advantage they have.  A fundamental element of developing their strategy is having a saleable cloud architecture to leverage the masses of data that they should be collecting about their shoppers.  The challenge is that as technology has evolved each retailer responded differently and implemented a piecemeal data strategy to accommodate data as it becomes available.  The challenge is to offer a cloud-based highly scalable distributed architecture that will allow retailers to process the data a variety and integrate new data sets as they become available.
 
 ## Dataset
 
-In order to appreciate the storage and computational requirements it is important to understand the idiosyncrasies of a retail data set.
+In order to appreciate the storage and computational requirements, it is important to understand the idiosyncrasies of a retail data set.
 
 Data available to retailers is heavily nuanced as each retailer collects and houses data in a different way.  There are a host of internal metrics required in the ordinary course of business.  In addition, there are a mounting number of external datasets now required to effectively compete.  All of this makes for a challenge when it comes to acquiring, blending and putting data to use.
 
-Retailer generated data (Internal data): This is data that the retailer creates during the normal course of business.  This includes transactional data such as what product was sold in each store at any given time including what other products it sold with in a specific transaction. At an operational level it includes the purchase orders they uses to get more product to sell from suppliers, inventory levels in warehouses and stores. Operational data is also future looking with anticipated through merchandise forecasts.  There are other data sets that track what products should be on shelves, how much product should be there and where the product should go. In short, there is complexity for Retailers on their internal data sets range greatly in terms their uses and the metrics gathered.
+Retailer generated data (Internal data): This is data that the retailer creates during the normal course of business.  This includes transactional data such as what product were sold in each store at any given time including what products sold together. At an operational level, it includes the purchase orders used to get more product to sell from suppliers, inventory levels in warehouses and stores. Operational data is also future looking with anticipated through merchandise forecasts.  There are other data sets that track what products should be on shelves, how much product should be there and where the product should go. In short, there is complexity for Retailers on their internal data sets range greatly in terms their uses and the metrics gathered.
 
-> *	Granularity describes the level of depth of a dataset.  On one side of the scale, transactional data sets are at a shopper, store, item, date/timestamp level of granularity and include important features such as what products are purchased together.  Commonly retailers make operational available at the store, product, day or week levels of granularity.  For example, units per store per day is a normalized measure of how quickly a product sells in a given store set.
-> *	Frequency describes how often a dataset is refreshed.  Some measures are important operationally and refreshed continually.  Other datasets are more static.  For example forecasts could be refreshed weekly, reference information like competitive stores could be updated monthly and exchange rates for planning purposes could be refreshed annually.
+> *	Granularity describes the level of depth of a dataset.  On one side of the scale, transactional data sets are at a shopper, store, item, date/timestamp level of granularity and include important features such as what products are purchased together.  Commonly retailers make operational data available at the store, product, day or week levels of granularity.  For example, units per store per day is a normalized measure of how quickly a product sells in a given store set.
+> *	Frequency describes how often a dataset is refreshed.  Some measures are important operationally and refreshed continually.  Other datasets are more static.  For example, forecasts could be refreshed weekly, reference information like competitive stores could be updated monthly and exchange rates for planning purposes could be refreshed annually.
 > *	Latency describes how much of a lag exists with a data set.  For example, while a dataset may be updated daily it may have two or three-day latency to get it from the stores where the product is selling.  Often times, it takes that much time to flow it to the central repository for further processing and reporting.
-> *	Restatement or trickle data occurs when updated data becomes available for past time periods.  When this occurs processes need to be in place to remove previous data with the updates.  Controls or versions of data should be in place for critical numbers such as actual sales values that get reported to Walstreet for thier shareholders.
+> *	Restatement or trickle data occurs when updated data becomes available for past time periods.  When this occurs processes need to be in place to remove previous data with the updates.  Controls or versions of data should be in place for critical numbers such as actual sales values that get reported to Wallstreet for their shareholders.
 
-Externally generated data: Not all data that a retailer uses comes from their internally systems as it only gives partial insight to shoppers and competitors.  To supplement internal data, retailers are continually assessing shopper preferences.  In order to do this many subscribe to services offered by IRI, Nielsen and InfoScout.  This type of data allows them to understand who their shoppers are and if they are getting their fair *share of wallet* or percent of purchases of each category were made in their locations.  It also allows them to see what other products those shoppers buy and which of their competitors those shoppers are purchasing them.  
+Externally generated data: Not all data that a retailer uses comes from their internal systems as it only gives partial insight to shoppers and competitors.  To supplement internal data, retailers are continually assessing shopper preferences.  In order to do this many subscribe to services offered by IRI, Nielsen, and InfoScout.  This type of data allows them to understand who their shoppers are and if they are getting their fair *share of wallet* or percent of purchases of each category were made in their locations.  It also allows them to see what other products those shoppers buy and which of their competitors those shoppers are purchasing them.  
 
 There are several external sources of data that have recently entered the market.  
 > *	Social Media: Insights from social media have become highly sought in recent years making that a highly coveted dataset.  
-> *	Omnichannel: Omnichannel and path to purchase data varies greatly and can holds insights as to how consumers shop for certain products and brands.  
-> *	Ecommerce: Purchases made on-line is also a desirable subset of the data. Ecommerce continues to pull purchases away from traditional retailers and understanding which products have better potential to sell on-line is considered essential
-The complexity with this data is that it can be hard to combine and mine with a retailers internal transactional and operational data.
+> *	Omnichannel: Omnichannel and path to purchase data varies greatly and can hold insights as to how consumers shop for certain products and brands.  
+> *	E-commerce: Purchases made online is also a desirable subset of the data. E-commerce continues to pull purchases away from traditional retailers and understanding which products have better potential to sell online is considered essential
+The complexity with this data is that it can be hard to combine and mine with retailers internal transactional and operational data.
 
 ### Dataset.  
 
-A simple sample dataset with very common metrics were used:
+Here is a description of the sample dataset:
 
 > *	Store – This column represents a single store.   The number of stores varies greatly by retailer.  The dataset included 300 stores.  Larger retailer chains can have more than 10,000 stores internationally.
 > *	Product – This is a proxy for a product UPC or Item Number.  Retailers will sell thousands of products in any given retail location.  For our purposes here 23 products were included.
@@ -77,11 +77,11 @@ Hadoop was chosen as a foundation with the overall solution shown in the diagram
 
 Apache Hadoop for retailers was chosen for several reasons.  First, Hadoop's capabilities are well aligned with the needs of retailers.  According to the home page of the Hadoop project at Apache Software Foundation, *Apache Hadoop offers highly reliable, scalable, distributed processing of large data sets using simple programming models. With the ability to be built on clusters of commodity computers, Hadoop provides a cost-effective solution for storing and processing structured, semi and unstructured data with no format requirements* [@fa18-516-17-Hadoop].
 
-First and foremost, the cost advantages associated with open source software should not be overlooked.  Retailers have razor thin margins.  There is stiff competition from on-line coutnerparts and a host of aggressive discount retailers such as Aldi, Family Dollar and Lidl with low cost private label product.  Saving money on infrastructure for retailers is critical to maintain a margin.
+First and foremost, the cost advantages associated with open source software should not be overlooked.  Retailers have razor thin margins.  There is stiff competition from online counterparts and a host of aggressive discount retailers such as Aldi, Family Dollar and Lidl with low-cost private label product.  In order to save cost and maintain their margin, saving money on infrastructure is criticalfor retailers.
 
-Retailers also need reliable data processing and distribution at scale.  Operational data is the lifeblood of a retailer.  If the computer assisted order system does not have reliable inventory, sales and forecast information from a store, it will not be able to issue purchase orders to suppliers and keep product on stores for ongoing business. Rather than relying on the hardware to rely on redundancy and high-availability, Hadoop detects and handles failures at the application layer and delivers a high-availability service on top of a cluster of computers to avoid a whole system failure [@fa18-516-17-highavailablity].
+Retailers also need reliable data processing and distribution at scale.  Operational data is the lifeblood of a retailer.  If the computer-assisted order system does not have reliable inventory, sales and forecast information from a store, it will not be able to issue purchase orders to suppliers and keep the product in stores for ongoing business. Rather than relying on the hardware to rely on redundancy and high-availability, Hadoop detects and handles failures at the application layer and delivers a high-availability service on top of a cluster of computers to avoid a whole system failure [@fa18-516-17-highavailablity].
 
-The application layer also allows for adding more datasets as they become available which is a key retailer need.  The Hadoop framework scales from processing on a single server to thousands of machines and uses the computation and storage available on each. This ability to scale coupled with the flexiblity to add new formats of semi and unstructured data is important new data is continually becoming available to retailers.  [@fa18-516-17-Hadoop].
+The application layer also allows for adding more datasets as they become available which is a key retailer need.  The Hadoop framework scales from processing on a single server to thousands of machines and uses the computation and storage available on each. This ability to scale coupled with the flexibility to add new formats of semi and unstructured data is important new data is continually becoming available to retailers.  [@fa18-516-17-Hadoop].
 
 ### HDFS
 
@@ -89,7 +89,7 @@ The Hadoop Distributed File system (HDFS) is Hadoop's way of proven ability to s
 
 For a retailer with thousands of stores and thousands of products capturing all of the data necessary results in petabytes of data.  In addition, data is constantly being created as products move in the supply chain, sell in the stores and forecasting and planning are continually being processed in the background.  HDFS accommodates these demands with its design.
 
-First, it is possible to store files of any size on HDFS.  The distributed file system breaks down files that potentially petabytes in size into smaller pieces or blocks and each piece could be stored on different machines if needed. In this system, a HDFS master node known as a NameNode and a slave node is called a DataNode. NameNodes maintain and manage all information about all files and directories stored on HDFS including the file system tree and metadata. DataNodes are the actual storage for the blocks. NameNode sends blocks to the DataNodes to store and DataNodes continuously report their status back including the list of blocks they are storing.  This makes it possible to store files of any size on a Hadoop cluster.
+First, it is possible to store files of any size on HDFS.  The distributed file system breaks down files that potentially petabytes in size into smaller pieces or blocks and each piece could be stored on different machines if needed. In this system, an HDFS master node known as a NameNode and a slave node is called a DataNode. NameNodes maintain and manage all information about all files and directories stored on HDFS including the file system tree and metadata. DataNodes are the actual storage for the blocks. NameNode sends blocks to the DataNodes to store and DataNodes continuously report their status back including the list of blocks they are storing.  This makes it possible to store files of any size on a Hadoop cluster.
 
 For this implementation, we are keeping the NameNode and the DataNode on the same VirtualBox with the set of sample data. As a future consideration, to do this at scale, the DataNodes would be distributed across many servers.  In addition, to fully leverage HDFS, the retailer data would be stored in larger files instead of millions of smaller files resulting in the NameNode using less memory.
 
@@ -115,13 +115,13 @@ As unstructured data is added to Hadoop and HDFS, a future consideration is to u
 
 
 ### API
-There needs to be a way to access the data through an API.  As a simpler implementation with python, PyHive is the logical API for illustrative purposes with Hive.  Per the Python Software foundation, Pyhive is *a collection of Python DB-API and SQLAlchemy interfaces for Presto and Hive* [@fa18-516-17-pyhive].
+There needs to be a way to access the data through an API.  As a simpler implementation with python, PyHive is the logical API for illustrative purposes with Hive.  Per the Python Software Foundation, Pyhive is *a collection of Python DB-API and SQLAlchemy interfaces for Presto and Hive* [@fa18-516-17-pyhive].
 
-Since the Hadoop, HDFS and HIVE implmentation will get complex as different types of data are added, a future consideration is to use WebHCat.  WebHCat is a REST API for HCatalog which is the storage management layer for Hadoop. WebHCat also works well with HDInsight making it ideal for an Azure Blob Microsoft implementation.  It is also a logical alternative as more Hadoop features as it can interact with more than hive.
+Since the Hadoop, HDFS and HIVE implementation will get complex as different types of data are added, a future consideration is to use WebHCat.  WebHCat is a REST API for HCatalog which is the storage management layer for Hadoop. WebHCat also works well with HDInsight making it ideal for an Azure Blob Microsoft implementation.  It is also a logical alternative as more Hadoop features as it can interact with more than hive.
 
 ## Benchmark
 
-Using the components above, the calculation for average price was run on VirtualBox on a local computer with 8MB of RAM.  The query itself took 13.1 seconds.
+Using the components above, the calculation for the average price was run on VirtualBox on a local computer with 8MB of RAM.  The query itself took 13.1 seconds.
 
 ### Query and Results
 Select Item_Key,(POSSales/POSQty) AS AverageRetail FROM (Select Item_Key, sum(POSSales) AS POSSales, sum(POSQty) AS POSQty From retaildata GROUP BY Item_Key) byitem ORDER BY Item_Key;
@@ -130,6 +130,6 @@ The query was run for the average price by store as shown here ![Average Price R
 
 ## Conclusion
 
-We've descibed here how retailers data needs are ever expanding. In order to meet those needs we've shown that it will take a reliable, scalable architecture at lower price point.  The cloud computing model delivered through a combination of Hadoop, HDFS and Hive will meet those needs.
+We've described here how retailers data needs are ever expanding. In order to meet those needs, we've shown that it will take a reliable, scalable architecture at the lower price point.  The cloud computing model delivered through a combination of Hadoop, HDFS and Hive will meet those needs.
 
 We've successfully implemented portions of this environment and illustrated the performance on a sample retail dataset.  In addition, several future considerations were called out as ways to enhance and scale the architecture to further meet the needs of retailers.
