@@ -30,18 +30,18 @@ As with other industries, the retail industry today is undergoing a major shift.
 In tandem with a more demanding shopper, there is also a fundamental shift in the sheer amount of data collected on the path taken to purchase products. For example:
 > * Shoppers now research and initiate more purchases from their smart devices.
 > * There are more *shopper interaction* data points captured in digital advertisements
-> * Social media impact on brands and products
-> * Multiple e-commerce outlets reselling product through new and different channels
+> * Social media posts can have an impact on brand sentiment and individual product sales
+> * E-commerce outlets sell and reselling products through a variety of channels
 
-In short, there is more data than ever available for retailers to leverage.
+In short, there is new structured and semi-structured data available for retailers to leverage.
 
-To survive, Retailers need to be open to change and use every advantage they have.  A fundamental element of developing their strategy is having a saleable cloud architecture to leverage the masses of data that they should be collecting about their shoppers.  The challenge is that as technology has evolved each retailer responded differently and implemented a piecemeal data strategy to accommodate data as it becomes available.  The challenge is to offer a cloud-based highly scalable distributed architecture that will allow retailers to process the data a variety and integrate new data sets as they become available.
+To survive in this changing landscape, retailers need to be open to change and use every advantage they have.  Unfortunately, as technology evolved, each retailer responded differently and implemented a piecemeal data strategy to accommodate data elementas as they become available. This legacy approach does not scale and ultimately puts them at a competitive disadvantage. We offer a cloud-based highly scalable distributed architecture that will allow retailers to reliably process a variety of data and integrate new data sets as they become available.
 
 ## Dataset
 
 In order to appreciate the storage and computational requirements, it is important to understand the idiosyncrasies of a retail data set.
 
-Data available to retailers is heavily nuanced as each retailer collects and houses data in a different way.  There are a host of internal metrics required in the ordinary course of business.  In addition, there are a mounting number of external datasets now required to effectively compete.  All of this makes for a challenge when it comes to acquiring, blending and putting data to use.
+Data available to retailers is heavily nuanced as each retailer collects and houses data in a different way.  There are a host of internal metrics required in the ordinary course of daily business.  In addition, there are a mounting number of external datasets now required to effectively compete.  All of this makes for a challenge when it comes to acquiring, blending and actually using the data.
 
 Retailer generated data (Internal data): This is data that the retailer creates during the normal course of business.  This includes transactional data such as what product were sold in each store at any given time including what products sold together. At an operational level, it includes the purchase orders used to get more product to sell from suppliers, inventory levels in warehouses and stores. Operational data is also future looking with anticipated through merchandise forecasts.  There are other data sets that track what products should be on shelves, how much product should be there and where the product should go. In short, there is complexity for Retailers on their internal data sets range greatly in terms their uses and the metrics gathered.
 
