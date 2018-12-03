@@ -107,17 +107,17 @@ Since this is the case, SQL against Hive to compute the average price was levera
 
 ### Data Storage
 
-Hadoop and HDFS require a database and the dataset in the example is small Derby was a natural choice.  Derby has a small footprint and is easy to install, deploy, and use.  It also supports a client server model and is based on Java which is already a requirement of Hadoop [@fa18-516-17-apachederby].
+Hadoop and HDFS require a database and, given the smaller sample dataset, Derby was implemented.  Derby has a small footprint and relatively straightforward to install, deploy, and use.  It also supports a client server model and is based on Java which is already a requirement of Hadoop [@fa18-516-17-apachederby].
 
-With Retail data the data size and concurrent processing needs quickly increase.  Traditional relational databases have been optimized for years and are work for conventional use cases where data is well defined and structured.  As we add in unstructured data Hadoop and HDFS Azure blob storage scales well.  Azure blobs are capable of storing a variety of types of files from documents to database backups.  Similar blobs are stored in containers.  Both containers and blobs do not have hard size limitations.
+As unstructured data is added to Hadoop and HDFS, a future consideration is to use Azure blob storage with HDInsight.  Azure blobs are capable of storing a variety of types of files from documents to database backups.  Similar blobs are stored in containers.  Both containers and blobs do not have hard size limitations.
 
-*Azure Blob storage can be accessed from Hadoop (available through HDInsight). HDInsight can use a blob container in Azure Storage as the default file system for the cluster. Through a Hadoop distributed file system (HDFS) interface provided by a WASB driver, the full set of components in HDInsight can operate directly on structured or unstructured data stored as blobs. Azure Blob storage can also be accessed via Azure SQL Data Warehouse using its PolyBase feature* [@fa18-516-17-azureblob]
+*Azure Blob storage can be accessed from Hadoop (available through HDInsight). HDInsight can use a blob container in Azure Storage as the default file system for the cluster. Through a Hadoop distributed file system (HDFS) interface provided by a WASB driver, the full set of components in HDInsight can operate directly on structured or unstructured data stored as blobs* [@fa18-516-17-azureblob].
 
 
 ### API
 There needs to be a way to access the data through an API.  As a simpler implementation with python, PyHive is the logical API for illustrative purposes with Hive.  Per the Python Software foundation, Pyhive is *a collection of Python DB-API and SQLAlchemy interfaces for Presto and Hive* [@fa18-516-17-pyhive].
 
-Since Retail data can be large and complex as a future consideration it may make sense to scale to other API technologies.  WebHCat is a REST API for HCatalog which is the storage management layer for Hadoop. WebHCat also works well with HDInsight making it ideal for an Azure Blob Microsoft implementation.  It is a logical alternative as implementation requirements grow with the data size.
+Since the Hadoop, HDFS and HIVE implmentation will get complex as different types of data are added, a future consideration is to use WebHCat.  WebHCat is a REST API for HCatalog which is the storage management layer for Hadoop. WebHCat also works well with HDInsight making it ideal for an Azure Blob Microsoft implementation.  It is also a logical alternative as more Hadoop features as it can interact with more than hive.
 
 ## Benchmark
 
