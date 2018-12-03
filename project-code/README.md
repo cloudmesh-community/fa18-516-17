@@ -27,7 +27,7 @@ Wait until processing finishes then:
 # RESTART THE VIRTUALBOX
 $ sudo adduser --ingroup hadoop_group hduser
 # Enter the Unix password "projectpass"
-# Enter multiple times for default; then Y
+# Enter 5x times for default; then Y
 $ sudo adduser hduser sudo
 $ ssh-keygen -t rsa
 # File in which to save the key: "hadkey"
@@ -43,10 +43,13 @@ Wait until processing finishes then:
 # From the hive> prompt create the table by copying in the following:
 CREATE EXTERNAL TABLE IF NOT EXISTS retaildata(Period_Key INT, Item_Key INT, Store_Key INT, POSQty INT, POSSales DOUBLE, Demand_Dollars DOUBLE) ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' STORED AS TEXTFILE LOCATION '/home/hduser/cloudmesh/retailhdfs/hivedbtable.txt' TBLPROPERTIES("skip.header.line.count"="1");
 
-# From the hive> prompt create the table by copying in the following:
-
+# From the hive> prompt load the table:
 load data local inpath '/home/hduser/cloudmesh/retailhdfs/retaildata2.txt' into table retaildata;
 
+# From the hive> prompt - Test if it works!  Run the query to create average price
+#Select Item_Key,(POSSales/POSQty) AS AverageRetail FROM (Select Item_Key, sum(POSSales) AS POSSales, sum(POSQty) AS POSQty From retaildata GROUP BY Item_Key) byitem ORDER BY Item_Key;
+
+# Now to run the query from PyHive
 # Control C to exit Hive
 $ sudo sh /home/student/project/fa18-516-17/project-code/setup-3.sh
 
@@ -60,10 +63,9 @@ Wait until processing finishes then:
 $HIVE_HOME/bin/hiveserver2
 
 #In a NEW TERMINAL
-
 cd ~
 $python remote.py
 
-#This should kick off a query tht runs on HIVE to calculate the average price by item
+#This will kick off a query through PyHive that runs on HIVE to calculate the average price by item
 ```
 
