@@ -42,8 +42,6 @@ To survive, Retailers need to be open to change and use every advantage they hav
 
 In order to appreciate the storage and computational requirements it is important to understand the idiosyncrasies of a retail data set.
 
-![Retail Project Diagram](images/retailprojectdiagram2.PNG){#fig:RetailProjectDiagram}
-
 Data available to retailers is heavily nuanced as each retailer collects and houses data in a different way.  There are a host of internal metrics required in the ordinary course of business.  In addition, there are a mounting number of external datasets now required to effectively compete.  All of this makes for a challenge when it comes to acquiring, blending and putting data to use.
 
 Retailer generated data (Internal data): This is data that the retailer creates during the normal course of business.  This includes transactional data such as what product was sold in each store at any given time including what other products it sold with in a specific transaction. At an operational level it includes the purchase orders they uses to get more product to sell from suppliers, inventory levels in warehouses and stores. Operational data is also future looking with anticipated through merchandise forecasts.  There are other data sets that track what products should be on shelves, how much product should be there and where the product should go. In short, there is complexity for Retailers on their internal data sets range greatly in terms their uses and the metrics gathered.
@@ -63,19 +61,18 @@ The complexity with this data is that it can be hard to combine and mine with a 
 
 ### Project dataset.  
 
-A simple sample dataset with very common metrics was masked so the proprietary retailer and supplier are unrecognizable:
+A simple sample dataset with very common metrics was masked so any potential proprietary retailer and supplier values are unrecognizable:
 
-*	Store – This column represents a single store.   The number of stores varies greatly by retailer.  The dataset included 300 stores.  Larger retailer chains can have more than 10,000 stores internationally.
-*	Product – This is a proxy for a product UPC or Item Number.  Retailers will sell thousands of products in any given retail location.  For our purposes here 23 products were included.
-*	Period_Key – Date information in a YYYYMMDD format.  Many retailer datasets have two years of history available.  This dataset contains daily data from 10/23/2015 through 10/15/2017 which equates to 723 unique dates.
-*	Sales Dollars – Dollar value associated for each product, store and period.
-*	Sales Units – Number of units sold for each product, store and period.
-*	Potential Demand – potential revenue associated with having the product available for sale (no out of stocks).  This is illustrative of a calculated metric calculated from existing metrics.
+> *	Store – This column represents a single store.   The number of stores varies greatly by retailer.  The dataset included 300 stores.  Larger retailer chains can have more than 10,000 stores internationally.
+> *	Product – This is a proxy for a product UPC or Item Number.  Retailers will sell thousands of products in any given retail location.  For our purposes here 23 products were included.
+> *	Period_Key – Date information in a YYYYMMDD format.  Many retailer datasets have two years of history available.  This dataset contains daily data from 10/23/2015 through 10/15/2017 which equates to 723 unique dates.
+> *	Sales Dollars – Dollar value associated for each product, store and period.
+> *	Sales Units – Number of units sold for each product, store and period.
+> *	Potential Demand – potential revenue associated with having the product available for sale (no out of stocks).  This is illustrative of a calculated metric calculated from existing metrics.
 
 ## Implementation
 
-Hadoop was chosen as a foundation with the overall solution shown in the diagram below.  
-While a learning exercise there were reasons behind the selection of the components:
+Hadoop was chosen as a foundation with the overall solution shown in the diagram ![Retail Project Diagram](images/retailprojectdiagram2.PNG){#fig:RetailProjectDiagram}:
 
 ### Hadoop
 
