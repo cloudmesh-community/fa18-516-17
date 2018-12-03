@@ -11,10 +11,10 @@
 **:mortar_board: Learning Objectives**
 
 
-* Describe the unique data storage and compute needs of the Retail Industry
-* Implement portions of a cloud computing environment that would meet those needs
-* Describe the performance of the prescribed cloud computing environment on a sample retail dataset
-* Highlight some additional architecture opportunities outside the scope of this project that would further help the Retail sector
+> * Describe the unique data storage and compute needs of the Retail Industry
+> * Implement portions of a cloud computing environment that would meet those needs
+> * Describe the performance of the prescribed cloud computing environment on a sample retail dataset
+> * Highlight some additional architecture opportunities outside the scope of this project that would further help the Retail sector
 
 
 ---
@@ -49,11 +49,8 @@ Data available to retailers is heavily nuanced as each retailer collects and hou
 Retailer generated data (Internal data): This is data that the retailer creates during the normal course of business.  This includes transactional data such as what product was sold in each store at any given time including what other products it sold with in a specific transaction. At an operational level it includes the purchase orders they uses to get more product to sell from suppliers, inventory levels in warehouses and stores. Operational data is also future looking with anticipated through merchandise forecasts.  There are other data sets that track what products should be on shelves, how much product should be there and where the product should go. In short, there is complexity for Retailers on their internal data sets range greatly in terms their uses and the metrics gathered.
 
 > *	Granularity describes the level of depth of a dataset.  On one side of the scale, transactional data sets are at a shopper, store, item, date/timestamp level of granularity and include important features such as what products are purchased together.  Commonly retailers make operational available at the store, product, day or week levels of granularity.  For example, units per store per day is a normalized measure of how quickly a product sells in a given store set.
-
 > *	Frequency describes how often a dataset is refreshed.  Some measures are important operationally and refreshed continually.  Other datasets are more static.  For example forecasts could be refreshed weekly, reference information like competitive stores could be updated monthly and exchange rates for planning purposes could be refreshed annually.
-
 > *	Latency describes how much of a lag exists with a data set.  For example, while a dataset may be updated daily it may have two or three-day latency to get it from the stores where the product is selling.  Often times, it takes that much time to flow it to the central repository for further processing and reporting.
-
 > *	Restatement or trickle data occurs when updated data becomes available for past time periods.  When this occurs processes need to be in place to remove previous data with the updates.  Controls or versions of data should be in place for critical numbers such as actual sales values that get reported to Walstreet for thier shareholders.
 
 Externally generated data: Not all data that a retailer uses comes from their internally systems as it only gives partial insight to shoppers and competitors.  To supplement internal data, retailers are continually assessing shopper preferences.  In order to do this many subscribe to services offered by IRI, Nielsen and InfoScout.  This type of data allows them to understand who their shoppers are and if they are getting their fair *share of wallet* or percent of purchases of each category were made in their locations.  It also allows them to see what other products those shoppers buy and which of their competitors those shoppers are purchasing them.  
@@ -66,7 +63,7 @@ The complexity with this data is that it can be hard to combine and mine with a 
 
 ### Project dataset.  
 
-To begin this journey, a sample dataset with very common metrics was masked so the proprietary retailer and supplier are unrecognizable:
+A simple sample dataset with very common metrics was masked so the proprietary retailer and supplier are unrecognizable:
 
 *	Store – This column represents a single store.   The number of stores varies greatly by retailer.  The dataset included 300 stores.  Larger retailer chains can have more than 10,000 stores internationally.
 *	Product – This is a proxy for a product UPC or Item Number.  Retailers will sell thousands of products in any given retail location.  For our purposes here 23 products were included.
