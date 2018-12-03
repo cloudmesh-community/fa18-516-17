@@ -26,7 +26,7 @@ Keywords: Hadoop, Hive, WebHCat, Java, Retail
 ## Introduction
 
 
-As with other industries, the retail industry today is undergoing a major shift.  Traditional brick and mortar stores used to relay on practiced merchandising techniques such as printed flyers, television advertising and low prices to drive traffic into stores.  Today, shoppers are electing for convenience more than ever before.  This is driving growth in a variety of time-saving Omni channel purchasing behaviors.  Shoppers are voting with their wallets for more product being shipped to their door or to their cars with grocery pick-up.
+As with other industries, the retail industry today is undergoing a major shift.  Traditional brick and mortar stores used to relay on practiced merchandising techniques such as printed flyers, television advertising and low prices to drive traffic into stores.  Today, shoppers are electing for convenience more than ever before.  This is driving growth in a variety of time-saving Omni channel purchasing behaviors.  Shoppers are voting with their wallets to have more product  shipped to their door and have more convenient services such as grocery pick-up.
 
 In tandem with a more demanding shopper there is also a fundamental shift in the sheer amount of data collected on the path taken to purchase products.  From the interaction to advertising campaigns, social media impact through research done online vs in-store, there is more data than ever available for retailers to leverage.
 
