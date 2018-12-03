@@ -17,9 +17,6 @@ wget http://mirrors.sonic.net/apache/hadoop/common/hadoop-3.1.1/hadoop-3.1.1.tar
 # Run hadoop tarball
 tar -xzf hadoop-3.1.1.tar.gz
 
-#Update export paths for current and future installs
-#Made bigger changes here - more code in original
-
 sudo cat /home/student/project/fa18-516-17/project-code/envvar.txt >>  ~/.bashrc
 
 export JAVA_HOME=~/cloudmesh/bin/jdk1.8.0_191
@@ -34,14 +31,14 @@ export PATH=$PATH:$HIVE_HOME/bin:$TEMPLETON_HOME/bin
 export PYENV_ROOT=/home/student/.pyenv
 export PATH=$PYENV_ROOT/bin:$PYENV_ROOT/plugins/pyenv-virtualenv/shims:$PYENV_ROOT/shims:$PATH
 
+
 java -version
 
-#Verify the hadoop installation:
 
+#Verify the hadoop installation:
 hadoop
 
 # getting the retail data file
-
 cd ~
 curl -L "https://drive.google.com/uc?export=download&id=150QG8juv9Vo29lkJIqhMLVQmLsIjXKzJ" >retaildata2.txt
 
@@ -85,7 +82,6 @@ hdfs dfs -chmod g+w tmp
 hdfs dfs -mkdir retailhdfs
 hdfs dfs -chmod g+w retailhdfs
 
-
 #Copy hive-site.xml
 sudo cp /home/student/project/fa18-516-17/project-code/hive-site.xml /home/hduser/cloudmesh/apache-hive-3.1.1-bin/conf
 
@@ -93,10 +89,8 @@ sudo cp /home/student/project/fa18-516-17/project-code/hive-site.xml /home/hduse
 
 ~/cloudmesh/apache-hive-3.1.1-bin/bin/schematool -initSchema -dbType derby
 
-
 #from here ~/cloudmesh
 cd ~/cloudmesh
-
 
 #Check hive version -delete this
 hive --version
