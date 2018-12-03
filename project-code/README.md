@@ -59,8 +59,8 @@ Wait until processing finishes then:
 
 ```bash
 ## Test
-#Hive Server2 start
-$HIVE_HOME/bin/hiveserver2
+#Hive Server2 start. Note the $ in front of HIVE is required
+$ $HIVE_HOME/bin/hiveserver2
 
 #In a NEW TERMINAL
 cd ~
