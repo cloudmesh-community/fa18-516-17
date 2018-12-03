@@ -26,9 +26,15 @@ Keywords: Hadoop, Hive, WebHCat, Java, Retail
 ## Introduction
 
 
-As with other industries, the retail industry today is undergoing a major shift.  Traditional brick and mortar stores used to relay on practiced merchandising techniques such as printed flyers, television advertising and low prices to drive traffic into stores.  Today, shoppers are electing for convenience more than ever before.  This is driving growth in a variety of time-saving Omni channel purchasing behaviors.  Shoppers are voting with their wallets to have more product  shipped to their door and have more convenient services such as grocery pick-up.
+As with other industries, the retail industry today is undergoing a major shift.  Traditional brick and mortar stores used to rely on practiced merchandising techniques such as printed flyers, television advertising and low prices to drive traffic into stores.  Today, shoppers are electing for convenience more than ever before.  This is driving growth in a variety of time-saving Omni channel purchasing behaviors.  Shoppers are voting with their wallets to have more product shipped to their door and for more convenient services such as grocery pick-up.
 
-In tandem with a more demanding shopper there is also a fundamental shift in the sheer amount of data collected on the path taken to purchase products.  From the interaction to advertising campaigns, social media impact through research done online vs in-store, there is more data than ever available for retailers to leverage.
+In tandem with a more demanding shopper, there is also a fundamental shift in the sheer amount of data collected on the path taken to purchase products. For example:
+> * Shoppers now research and initiate more purchases from thier smart devices.
+> * There are more *shopper interaction* datapoints captured in digital advertisements
+> * Social media impact on brands and products
+> * Multiple ecommerce outlets reselling product through new and different channels
+
+In short, there is more data than ever available for retailers to leverage.
 
 To survive, Retailers need to be open to change and use every advantage they have.  A fundamental element of developing their strategy is having a saleable cloud architecture to leverage the masses of data that they should be collecting about their shoppers.  The challenge is that as technology has evolved each retailer responded differently and implemented a piecemeal data strategy to accommodate data as it becomes available.  The challenge is to offer a cloud based highly scalable distributed architecture that will allow retailers to process the data a variety and integrate new data sets as they become available.
 
