@@ -1,6 +1,9 @@
 # Week 11/26/18 - 12/2/18
 * Continued writing the Project paper
-* Cleanup on previous chapter and sections
+* Switched gears after many many hours to try implement PyHive
+* Implemented Pyhive successfully
+* Based on feedback from Instructor rewrote the Readme file and tried to simplify all the steps.  Very time consuming to try to get a script to work correctly.  iterated through over 20 virualboxes in the last 2 weeks.
+* Reviewed and corrected other chapters/sections
 
 # Week 11/19/18 - 11/25/18
 * Focused on the API webhcat to use with hdfs and hive - spent several hours with this and I'm still having a hard time
