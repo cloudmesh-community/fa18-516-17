@@ -35,7 +35,7 @@ In tandem with a more demanding shopper, there is also a fundamental shift in th
 
 In short, there is new structured and semi-structured data available for retailers to leverage.
 
-To survive in this changing landscape, retailers need to be open to change and use every advantage they have.  Unfortunately, as technology evolved, each retailer responded differently and implemented a piecemeal data strategy to accommodate data elementas as they become available. This legacy approach does not scale and ultimately puts them at a competitive disadvantage. We offer a cloud-based highly scalable distributed architecture that will allow retailers to reliably process a variety of data and integrate new data sets as they become available.
+To survive in this changing landscape, retailers need to be open to change and use every advantage they have.  Unfortunately, as technology evolved, each retailer responded differently and implemented a piecemeal data strategy to accommodate data elements as they become available. This legacy approach does not scale and ultimately puts them at a competitive disadvantage. We offer a cloud-based highly scalable distributed architecture that will allow retailers to reliably process a variety of data and integrate new data sets as they become available.
 
 ## Dataset
 
@@ -43,7 +43,7 @@ In order to appreciate the storage and computational requirements, it is importa
 
 Data available to retailers is heavily nuanced as each retailer collects and houses data in a different way.  There are a host of internal metrics required in the ordinary course of daily business.  In addition, there are a mounting number of external datasets now required to effectively compete.  All of this makes for a challenge when it comes to acquiring, blending and actually using the data.
 
-Retailer generated data (Internal data): This is data that the retailer creates during the normal course of business.  This includes transactional data such as what product were sold in each store at any given time including what products sold together. At an operational level, it includes the purchase orders used to get more product to sell from suppliers, inventory levels in warehouses and stores. Operational data is also future looking with anticipated through merchandise forecasts.  There are other data sets that track what products should be on shelves, how much product should be there and where the product should go. In short, retailers internal data sets vary greatly in terms the metrics gathered and how they are used which adds complexity.
+Retailer generated data (Internal data): This is data that the retailer creates during the normal course of business.  This includes transactional data such as what product were sold in each store at any given time including what products sold together. At an operational level, it includes the purchase orders used to get more product to sell from suppliers, inventory levels in warehouses and stores. Operational data is also future looking with anticipated through merchandise forecasts.  There are other data sets that track what products should be on shelves, how much product should be there and where the product should go. In short, retailers internal data sets vary greatly in terms of the metrics gathered and how they are used which adds complexity.
 
 > *	Granularity describes the level of depth of a dataset.  On one side of the scale, transactional data sets are at a shopper, store, item, timestamp level of granularity and include important features such as what products are purchased together.  Retailers often make operational data available at the store, product, day or week levels of granularity.  For example, units per store per day is a normalized measure of how quickly a product sells in a given set of stores.
 > *	Frequency describes how often a dataset is refreshed.  Some measures are important operationally and refreshed continually.  Other datasets are more static.  For example, forecasts could be refreshed weekly, reference information like competitive stores could be updated monthly and exchange rates for planning purposes could be refreshed annually.
@@ -57,7 +57,7 @@ There are several external sources of data that have recently entered the market
 > *	Omnichannel: Omnichannel and path to purchase data varies greatly and can hold insights as to how consumers shop for certain products and brands.  
 > *	E-commerce: Knowledge of purchases made online is desirable to understand which products have better potential to sell online.
 
-The variety and amount of data available in the datasets makes pulling and storing the data a challenge.  This challenge is exacerbated by the need to blend the vastly different internal and external data together.
+The variety and amount of data available in the datasets make pulling and storing the data a challenge.  This challenge is exacerbated by the need to blend the vastly different internal and external data together.
 
 ### Dataset.  
 
@@ -78,7 +78,7 @@ Diagram of the overall solution ![Retail Project Diagram](images/retailprojectdi
 
 Apache Hadoop for retailers was chosen for several reasons.  First, Hadoop's capabilities are well aligned with the needs of retailers.  According to the home page of the Hadoop project at Apache Software Foundation, *Apache Hadoop offers highly reliable, scalable, distributed processing of large data sets using simple programming models. With the ability to be built on clusters of commodity computers, Hadoop provides a cost-effective solution for storing and processing structured, semi and unstructured data with no format requirements* [@fa18-516-17-Hadoop].
 
-First and foremost, the cost advantages associated with open source software should not be overlooked.  Retailers have razor thin margins.  There is stiff competition from online retails and a host of aggressive discount retailers such as Aldi, Family Dollar and Lidl with low-cost private label products.  In order to save cost and maintain their margin, saving money on infrastructure is criticalfor retailers.
+First and foremost, the cost advantages associated with open source software should not be overlooked.  Retailers have razor thin margins.  There is stiff competition from online retails and a host of aggressive discount retailers such as Aldi, Family Dollar and Lidl with low-cost private label products.  In order to save cost and maintain their margin, saving money on infrastructure is critical for retailers.
 
 Retailers also need reliable data processing and distribution at scale.  Operational data is the lifeblood of a retailer.  If the computer-assisted order system does not have reliable inventory, sales and forecast information from a store, it will not be able to issue purchase orders to suppliers and keep the product in stores for ongoing business. Rather than relying on the hardware to rely on redundancy and high-availability, Hadoop detects and handles failures at the application layer and delivers a high-availability service on top of a cluster of computers to avoid a whole system failure [@fa18-516-17-highavailablity].
 
