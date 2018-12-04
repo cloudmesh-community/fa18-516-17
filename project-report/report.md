@@ -72,7 +72,9 @@ Here is a description of the sample dataset:
 
 ## Implementation
 
-Diagram of the overall solution ![Retail Project Diagram](images/retailprojectdiagram2.PNG){#fig:RetailProjectDiagram}:
+Diagram of the overall solution is shown in +@fig:RetailProjectDiagram.
+
+![Retail Project Diagram](images/retailprojectdiagram2.PNG){#fig:RetailProjectDiagram}
 
 ### Hadoop
 
