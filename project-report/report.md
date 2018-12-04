@@ -84,7 +84,7 @@ First and foremost, the cost advantages associated with open source software sho
 
 Retailers also need reliable data processing and distribution at scale.  Operational data is the lifeblood of a retailer.  If the computer-assisted order system does not have reliable inventory, sales and forecast information from a store, it will not be able to issue purchase orders to suppliers and keep the product in stores for ongoing business. Rather than relying on the hardware to rely on redundancy and high-availability, Hadoop detects and handles failures at the application layer and delivers a high-availability service on top of a cluster of computers to avoid a whole system failure [@fa18-516-17-highavailablity].
 
-The application layer also allows for adding more datasets as they become available which is a key retailer need.  The Hadoop framework scales from processing on a single server to thousands of machines and uses the computation and storage available on each. This ability to scale coupled with the flexibility to add new formats of semi and unstructured data is important new data is continually becoming available to retailers.  [@fa18-516-17-Hadoop].
+The application layer also allows for adding more datasets as they become available which is a key retailer need.  The Hadoop framework scales from processing on a single server to thousands of machines and uses the computation and storage available on each. This ability to scale coupled with the flexibility to add new formats of semi and unstructured data is important new data is continually becoming available to retailers [@fa18-516-17-Hadoop].
 
 ### HDFS
 
@@ -129,7 +129,9 @@ Using the components above, the calculation for the average price was run on Vir
 ### Query and Results
 Select Item_Key,(POSSales/POSQty) AS AverageRetail FROM (Select Item_Key, sum(POSSales) AS POSSales, sum(POSQty) AS POSQty From retaildata GROUP BY Item_Key) byitem ORDER BY Item_Key;
 
-The query was run for the average price by store as shown here: ![Average Price Results](images/queryresults.png){#fig:RetailAveragePrice}
+The query was run for the average price by store as shown here +@fig:RetailAveragePrice.
+
+![Average Price Results](images/queryresults.png){#fig:RetailAveragePrice}
 
 ## Conclusion
 
