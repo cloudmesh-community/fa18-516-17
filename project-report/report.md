@@ -11,10 +11,10 @@
 **:mortar_board: Learning Objectives**
 
 
-> * Describe the unique data storage and compute needs of the Retail Industry
-> * Implement portions of a cloud computing environment that would meet those needs
-> * Describe the performance of the prescribed environment on a sample retail dataset
-> * Highlight some additional architecture opportunities outside the scope that would further help the Retail sector
+* Describe the unique data storage and compute needs of the Retail Industry
+* Implement portions of a cloud computing environment that would meet those needs
+* Describe the performance of the prescribed environment on a sample retail dataset
+* Highlight some additional architecture opportunities outside the scope that would further help the Retail sector
 
 ---
 
@@ -28,10 +28,10 @@ Keywords: Hadoop, Hive, WebHCat, Java, Retail
 As with other industries, the retail industry today is undergoing a major shift.  Traditional brick and mortar stores used to rely on practiced merchandising techniques such as printed flyers, television advertising, and low prices to drive traffic into stores.  Today, shoppers are electing for convenience more than ever before.  This is driving growth in a variety of time-saving Omni channel purchasing behaviors.  Shoppers are voting with their wallets to have more product shipped to their door and for more convenient services such as grocery pick-up.
 
 In tandem with a more demanding shopper, there is also a fundamental shift in the sheer amount of data collected on the path taken to purchase products. For example:
-> * Shoppers now research and initiate more purchases from their smart devices.
-> * There are more *shopper interaction* data points captured in digital advertisements
-> * Social media posts can have an impact on brand sentiment and individual product sales
-> * E-commerce outlets sell and reselling products through a variety of channels
+* Shoppers now research and initiate more purchases from their smart devices.
+* There are more shopper interaction data points captured in digital advertisements
+* Social media posts can have an impact on brand sentiment and individual product sales
+* E-commerce outlets sell and reselling products through a variety of channels
 
 In short, there is new structured and semi-structured data available for retailers to leverage.
 
@@ -45,17 +45,17 @@ Data available to retailers is heavily nuanced as each retailer collects and hou
 
 Retailer generated data (Internal data): This is data that the retailer creates during the normal course of business.  This includes transactional data such as what product were sold in each store at any given time including what products sold together. At an operational level, it includes the purchase orders used to get more product to sell from suppliers, inventory levels in warehouses and stores. Operational data is also future looking with anticipated through merchandise forecasts.  There are other data sets that track what products should be on shelves, how much product should be there and where the product should go. In short, retailers internal data sets vary greatly in terms of the metrics gathered and how they are used which adds complexity.
 
-> *	Granularity describes the level of depth of a dataset.  On one side of the scale, transactional data sets are at a shopper, store, item, timestamp level of granularity and include important features such as what products are purchased together.  Retailers often make operational data available at the store, product, day or week levels of granularity.  For example, units per store per day is a normalized measure of how quickly a product sells in a given set of stores.
-> *	Frequency describes how often a dataset is refreshed.  Some measures are important operationally and refreshed continually.  Other datasets are more static.  For example, forecasts could be refreshed weekly, reference information like competitive stores could be updated monthly and exchange rates for planning purposes could be refreshed annually.
-> *	Latency describes how much of a lag exists with a data set.  For example, while a dataset may be updated daily it may have two or three-day latency to get it from the stores where the product is selling.  Often times, it takes that much time to flow it to the central repository for further processing and reporting.
-> *	Restatement or trickle data occurs when updated data becomes available for past time periods.  When this occurs processes need to be in place to remove previous data with the updates.  Controls or versions of data should be in place for critical numbers such as actual sales values that get reported to Wallstreet for their shareholders.
+*	Granularity describes the level of depth of a dataset.  On one side of the scale, transactional data sets are at a shopper, store, item, timestamp level of granularity and include important features such as what products are purchased together.  Retailers often make operational data available at the store, product, day or week levels of granularity.  For example, units per store per day is a normalized measure of how quickly a product sells in a given set of stores.
+*	Frequency describes how often a dataset is refreshed.  Some measures are important operationally and refreshed continually.  Other datasets are more static.  For example, forecasts could be refreshed weekly, reference information like competitive stores could be updated monthly and exchange rates for planning purposes could be refreshed annually.
+*	Latency describes how much of a lag exists with a data set.  For example, while a dataset may be updated daily it may have two or three-day latency to get it from the stores where the product is selling.  Often times, it takes that much time to flow it to the central repository for further processing and reporting.
+*	Restatement or trickle data occurs when updated data becomes available for past time periods.  When this occurs processes need to be in place to remove previous data with the updates.  Controls or versions of data should be in place for critical numbers such as actual sales values that get reported to Wallstreet for their shareholders.
 
 Externally generated data: Not all data that a retailer uses comes from their internal systems as it only gives partial insight to shoppers and competitors.  To supplement internal data, retailers are continually assessing shopper preferences.  In order to do this many subscribe to services offered by IRI, Nielsen, and InfoScout.  This type of data allows them to understand who their shoppers are and if they are getting their fair *share of wallet* or percent of purchases of each category were made in their locations.  It also allows them to see what other products those shoppers buy and which of their competitors those shoppers are purchasing them.  
 
 There are several external sources of data that have recently entered the market.  
-> *	Social Media: Insights from social media have become highly sought after to understand and influence shopper sentiment.  
-> *	Omnichannel: Omnichannel and path to purchase data varies greatly and can hold insights as to how consumers shop for certain products and brands.  
-> *	E-commerce: Knowledge of purchases made online is desirable to understand which products have better potential to sell online.
+*	Social Media: Insights from social media have become highly sought after to understand and influence shopper sentiment.  
+*	Omnichannel: Omnichannel and path to purchase data varies greatly and can hold insights as to how consumers shop for certain products and brands.  
+*	E-commerce: Knowledge of purchases made online is desirable to understand which products have better potential to sell online.
 
 The variety and amount of data available in the datasets make pulling and storing the data a challenge.  This challenge is exacerbated by the need to blend the vastly different internal and external data together.
 
@@ -63,12 +63,12 @@ The variety and amount of data available in the datasets make pulling and storin
 
 Here is a description of the sample dataset:
 
-> *	Store – Values here represent individual stores.   The number of stores varies greatly by retailer.  The dataset included 300 stores.  Larger retailer chains can have more than 10,000 stores internationally.
-> *	Product – This is a proxy for a product UPC or Item Number.  Retailers will sell thousands of products in any given retail location.  For our purposes here 23 products were included.
-> *	Period_Key – Date information in a YYYYMMDD format.  Many retailer datasets have two years of history available.  This dataset contains daily data from 10/23/2015 through 10/15/2017 which equates to 723 unique dates.
-> *	Sales Dollars – US Dollars associated with the sales for each product, store and period.
-> *	Sales Units – Number of units sold for each product, store and period.
-> *	Potential Demand – Potential revenue associated with having the product available for sale (no out of stocks).
+*	Store – Values here represent individual stores.   The number of stores varies greatly by retailer.  The dataset included 300 stores.  Larger retailer chains can have more than 10,000 stores internationally.
+*	Product – This is a proxy for a product UPC or Item Number.  Retailers will sell thousands of products in any given retail location.  For our purposes here 23 products were included.
+*	Period_Key – Date information in a YYYYMMDD format.  Many retailer datasets have two years of history available.  This dataset contains daily data from 10/23/2015 through 10/15/2017 which equates to 723 unique dates.
+*	Sales Dollars – US Dollars associated with the sales for each product, store and period.
+*	Sales Units – Number of units sold for each product, store and period.
+*	Potential Demand – Potential revenue associated with having the product available for sale (no out of stocks).
 
 ## Implementation
 
@@ -100,7 +100,7 @@ Commodity Hardware means using standard commonly used hardware without the need 
 
 ### Hive
 
-*Since its incubation in 2008, Apache Hive is considered the defacto standard for interactive SQL queries over petabytes of data in Hadoop. Data analysts use Hive to query, summarize, explore and analyze that data, then turn it into actionable business insight* [@fa18-516-17-apachehive].
+>"Since its incubation in 2008, Apache Hive is considered the defacto standard for interactive SQL queries over petabytes of data in Hadoop. Data analysts use Hive to query, summarize, explore and analyze that data, then turn it into actionable business insight" [@fa18-516-17-apachehive].
 
 Hive works well with HDFS because it organizes the data into databases, tables, buckets and clusters.  Partitioning and bucketing these tables allows for efficient storage and data retrieval.  This abstract structure allows the system to only load the relevant parts of the table during query processing.  Querying less data results in faster query execution times [@fa18-516-17-hiveorganization].
 
@@ -114,11 +114,11 @@ Hadoop and HDFS require a database and, given the smaller sample dataset, Derby 
 
 As unstructured data is added to Hadoop and HDFS, a future consideration is to use Azure blob storage with HDInsight.  Azure blobs are capable of storing a variety of types of files from documents to database backups.  Similar blobs are stored in containers.  Both containers and blobs do not have hard size limitations.
 
-*Azure Blob storage can be accessed from Hadoop (available through HDInsight). HDInsight can use a blob container in Azure Storage as the default file system for the cluster. Through a Hadoop distributed file system (HDFS) interface provided by a WASB driver, the full set of components in HDInsight can operate directly on structured or unstructured data stored as blobs* [@fa18-516-17-azureblob].
+>"Azure Blob storage can be accessed from Hadoop (available through HDInsight). HDInsight can use a blob container in Azure Storage as the default file system for the cluster. Through a Hadoop distributed file system (HDFS) interface provided by a WASB driver, the full set of components in HDInsight can operate directly on structured or unstructured data stored as blobs" [@fa18-516-17-azureblob].
 
 
 ### API
-There needs to be a way to access the data through an API.  As a simpler implementation with python, PyHive is the logical API for illustrative purposes with Hive.  Per the Python Software Foundation, Pyhive is *a collection of Python DB-API and SQLAlchemy interfaces for Presto and Hive* [@fa18-516-17-pyhive].
+There needs to be a way to access the data through an API.  As a simpler implementation with python, PyHive is the logical API for illustrative purposes with Hive.  Per the Python Software Foundation, Pyhive is "a collection of Python DB-API and SQLAlchemy interfaces for Presto and Hive" [@fa18-516-17-pyhive].
 
 Since the Hadoop, HDFS and HIVE implementation will get complex as different types of data are added, a future consideration is to use WebHCat.  WebHCat is a REST API for HCatalog which is the storage management layer for Hadoop. WebHCat also works well with HDInsight making it ideal for an Azure Blob Microsoft implementation.  In addition it can interact with more functionality of Hadoop than PyHive.
 
@@ -129,7 +129,7 @@ Using the components above, the calculation for the average price was run on Vir
 ### Query and Results
 Select Item_Key,(POSSales/POSQty) AS AverageRetail FROM (Select Item_Key, sum(POSSales) AS POSSales, sum(POSQty) AS POSQty From retaildata GROUP BY Item_Key) byitem ORDER BY Item_Key;
 
-The query was run for the average price by store as shown here ![Average Price Results](images/queryresults.png){#fig:RetailAveragePrice}:
+The query was run for the average price by store as shown here: ![Average Price Results](images/queryresults.png){#fig:RetailAveragePrice}
 
 ## Conclusion
 
