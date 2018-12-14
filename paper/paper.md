@@ -1,6 +1,8 @@
-# Cloud Security Alliance (CSA) :smiley: fa18-516-17
+# Cloud Security Alliance (CSA) 
 
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-17/edit/master/paper/paper.md)
+
+Richa Rastogi fa18-516-17
 
 ## Introduction to CSA
 
